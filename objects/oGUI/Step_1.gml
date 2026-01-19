@@ -57,8 +57,7 @@ for (var i = 0; i < maxDevices; i++)
 			
 		}
 		
-		//If one joystick wasn't used, reset the position
-		
+		//If one joystick wasn't used, reset the position	
 		if(leftTouch = false) {
 			
 			joystickOneCurrX = joystickOneBaseX

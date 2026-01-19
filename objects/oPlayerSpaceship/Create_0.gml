@@ -9,9 +9,16 @@ rightFactor = 0
 
 //Variables related to movement
 maxSpinSpeed = 3
+xSpeed = 0
+ySpeed = 0
+accelerationSpeed = .0003
+slowFactor = 0.99
+
+	//These avoid sub-pixel movement
+	trueX = x
+	trueY = y
 
 //Variables related to laser - stored for each laser separately
-
 numLasers = 2
 for (var i = 0; i <= 1; i++) {
 	laserLengthCap[i] = 200

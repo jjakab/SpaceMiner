@@ -4,7 +4,7 @@ cameraWidth = view_wport[0]
 cameraHeight = view_hport[0]
 
 //How far do we want the joystick to be able to move from the center
-maxJoystickDistance = 50
+maxJoystickDistance = 70
 
 //Variables for joystick one
 joystickOneBaseX = cameraWidth/4
