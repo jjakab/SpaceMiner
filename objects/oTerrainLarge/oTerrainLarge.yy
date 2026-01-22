@@ -1,17 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"oStar",
+  "%Name":"oTerrainLarge",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oStar",
+  "name":"oTerrainLarge",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Terrain",
+    "path":"folders/Objects/Terrain.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"oTerrainMaster",
+    "path":"objects/oTerrainMaster/oTerrainMaster.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sStars",
-    "path":"sprites/sStars/sStars.yy",
+    "name":"sGenericBigOutline",
+    "path":"sprites/sGenericBigOutline/sGenericBigOutline.yy",
   },
   "spriteMaskId":null,
   "visible":true,

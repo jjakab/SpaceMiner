@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"vectorAngle",
   "isCompatibility":false,
   "isDnD":false,

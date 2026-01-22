@@ -1,15 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"oTerrainLargeMini",
+  "%Name":"oTerrainEdge",
   "eventList":[],
   "managed":true,
-  "name":"oTerrainLargeMini",
+  "name":"oTerrainEdge",
   "overriddenProperties":[],
   "parent":{
     "name":"Terrain",
     "path":"folders/Objects/Terrain.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"oTerrainMaster",
+    "path":"objects/oTerrainMaster/oTerrainMaster.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -27,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sTerrainEdge1",
+    "path":"sprites/sTerrainEdge1/sTerrainEdge1.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

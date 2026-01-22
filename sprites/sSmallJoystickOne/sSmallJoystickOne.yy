@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"sSmallJoystickOne",
   "bboxMode":0,
   "bbox_bottom":91,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"40f17ba2-aa48-4078-a5c0-2daadd3e2f65","name":"40f17ba2-aa48-4078-a5c0-2daadd3e2f65","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"40f17ba2-aa48-4078-a5c0-2daadd3e2f65","name":"40f17ba2-aa48-4078-a5c0-2daadd3e2f65","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -32,7 +32,7 @@
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
-    "$GMSequence":"",
+    "$GMSequence":"v1",
     "%Name":"sSmallJoystickOne",
     "autoRecord":true,
     "backdropHeight":768,
