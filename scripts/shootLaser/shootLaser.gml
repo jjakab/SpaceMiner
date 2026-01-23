@@ -31,7 +31,7 @@ function shootLaser(laserIndex,offsetLength,offsetAngle){
 			hitObj = true
 			
 			//LOGIC FOR LASER HITTING OBJECT
-			var thingShot = instance_place(lx,ly,oTerrainMiniFrame)
+			var thingShot = instance_position(lx,ly,oTerrainMiniFrame)
 			instance_destroy(thingShot)
 			
 			break;
