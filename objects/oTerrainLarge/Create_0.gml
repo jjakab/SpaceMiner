@@ -1,8 +1,10 @@
 /// @description Create smaller blocks
 
+//We want this object to have no hitbox
+mask_index = sGenericBigOutlineMask
 
-//Declare an array of mini terrains created by this large block
-
+//Create a DS list with all miniframes that are part of this larger block
+minilist = ds_list_create()
 
 //Start at -1,-1 relative to origin and place terrain minis
 
@@ -26,7 +28,13 @@ for (var i = 0; i < cellsPerRow; i++) {
 		yPos = j * (cellWidth / 2 - 1) - 1
 		
 		miniblock = instance_create_depth(x + xPos,y + yPos,0,oTerrainMiniFrame)
-		miniblockArray[cellsPerRow - i,cellsPerRow - j] = miniblock
+		//miniblockArray[cellsPerRow - i,cellsPerRow - j] = miniblock
+		
+		with(miniblock) {
+			parentFrame = other
+		}
+		
+		ds_list_add(minilist,miniblock)
 		
 	}
 }

@@ -7,12 +7,9 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Terrain",
-    "path":"folders/Objects/Terrain.yy",
+    "path":"folders/Objects/Environment/Terrain.yy",
   },
-  "parentObjectId":{
-    "name":"oTerrainMaster",
-    "path":"objects/oTerrainMaster/oTerrainMaster.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

@@ -27,7 +27,7 @@
   "origin":3,
   "parent":{
     "name":"Edge",
-    "path":"folders/Sprites/Terrain/Edge.yy",
+    "path":"folders/Sprites/Environment/Terrain/Edge.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

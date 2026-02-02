@@ -3,9 +3,6 @@
 function shootLaser(laserIndex,offsetLength,offsetAngle){
 
 	draw_set_color(c_white)
-
-	//PLACEHOLDER
-	var solid_object = oTerrainMaster;
 	
 	//Calculate the origin of the laser within the player sprite - this makes them emit from the cannons
 	var laserOneXOrigin = x + lengthdir_x(offsetLength,image_angle + offsetAngle)
@@ -26,15 +23,36 @@ function shootLaser(laserIndex,offsetLength,offsetAngle){
 	    ly = laserOneYOrigin + lengthdir_y(i, image_angle);
 
 		//Check if we hit an object
-	    if(collision_point(lx, ly, solid_object, false, true)){
-	        
-			hitObj = true
+	    if(collision_point(lx, ly, oTerrainMaster, false, true)){
 			
-			//LOGIC FOR LASER HITTING OBJECT
-			var thingShot = instance_position(lx,ly,oTerrainMiniFrame)
-			instance_destroy(thingShot)
+			//We have hit a large terrain object, and should check its list of miniterrains
+			if(instance_position(lx,ly,oTerrainLarge)) {
+				
+				//Construct a list of the mini-terrains
+				var largeGrid = instance_position(lx,ly,oTerrainLarge)
+				var listLength = ds_list_size(largeGrid.minilist)
+				
+				//Loop through each mini-terrain
+				for (var j = 0; j < listLength; j++) {
+					
+					//If a mini-terrain is hit, stop the laser and damage the mini-terrain
+					if(instance_position(lx,ly,ds_list_find_value(largeGrid.minilist,j))) {
+							hitObj = true
+							var thingShot = ds_list_find_value(largeGrid.minilist,j)
+							with(thingShot) {
+								hp -= 1
+								if(hp <= 0) instance_destroy()
+							}
 			
-			break;
+							break;
+					}
+				}
+				
+				//If we hit something, we want to break out of the outer loop
+				if(hitObj) break;
+				
+			}
+
 	    }
 
 	}

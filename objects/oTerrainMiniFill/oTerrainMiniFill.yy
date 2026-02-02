@@ -9,11 +9,11 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Terrain",
-    "path":"folders/Objects/Terrain.yy",
+    "path":"folders/Objects/Environment/Terrain.yy",
   },
   "parentObjectId":{
-    "name":"oTerrainMaster",
-    "path":"objects/oTerrainMaster/oTerrainMaster.yy",
+    "name":"oDestructibleTerrain",
+    "path":"objects/oDestructibleTerrain/oDestructibleTerrain.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"Generic",
-    "path":"folders/Sprites/Terrain/Generic.yy",
+    "path":"folders/Sprites/Environment/Terrain/Generic.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

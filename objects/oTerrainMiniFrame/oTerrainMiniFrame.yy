@@ -10,7 +10,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Terrain",
-    "path":"folders/Objects/Terrain.yy",
+    "path":"folders/Objects/Environment/Terrain.yy",
   },
   "parentObjectId":{
     "name":"oDestructibleTerrain",
