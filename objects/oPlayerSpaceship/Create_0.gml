@@ -13,6 +13,7 @@ xSpeed = 0
 ySpeed = 0
 accelerationSpeed = .0003
 slowFactor = 0.99
+bounceCoefficient = 0.6
 
 	//These avoid sub-pixel movement
 	trueX = x

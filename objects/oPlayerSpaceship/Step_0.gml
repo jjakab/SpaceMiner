@@ -30,6 +30,86 @@ if(leftFactor > 0) {
 xSpeed = xSpeed * slowFactor
 ySpeed = ySpeed * slowFactor
 
+//Start by assuming we're not colliding with anything
+var isColliding = false
+
+//Check for collision in x-direction with terrain-master
+if(place_meeting(x+xSpeed,y,oTerrainMaster)) {
+	
+	//If the collision is with an edge, set the flag and reverse direction
+	if(place_meeting(x+xSpeed,y,oTerrainEdge)) {
+		isColliding = true
+		xSpeed = -xSpeed * bounceCoefficient
+	}
+	
+	//If the collision is with a large terrain, check if we're actually colliding by comparing against the minilist
+	else if(place_meeting(x + xSpeed, y, oTerrainLarge)) {
+		
+		//Create vars for terrain object and list size		
+		var largeTerrain = instance_place(x + xSpeed, y, oTerrainLarge)
+		var listSize = ds_list_size(largeTerrain.minilist)
+		
+		//Loop through each miniterrain in list
+		for (var j = 0; j < listSize; j++) {
+			
+			//Check if this object exists
+			if(instance_exists(ds_list_find_value(largeTerrain.minilist,j))) {
+				
+				//If it exists, check if we're colliding with it
+				if(place_meeting(x + xSpeed, y, ds_list_find_value(largeTerrain.minilist,j))) {
+					
+					//If we're colliding with it, flag and switch direction, then break
+					isColliding = true
+					xSpeed = -xSpeed * bounceCoefficient
+ 					break;
+				}
+			}
+		}
+	}
+	
+}
+
+//Reset isColliding
+isColliding = false
+
+//Repeat in y-direction
+if(place_meeting(x,y+ySpeed,oTerrainMaster)) {
+	
+	//If the collision is with an edge, set the flag and reverse direction
+	if(place_meeting(x,y+ySpeed,oTerrainEdge)) {
+		isColliding = true
+		ySpeed = -ySpeed * bounceCoefficient
+	}
+	
+	//If the collision is with a large terrain, check if we're actually colliding by comparing against the minilist
+	else if(place_meeting(x, y + ySpeed, oTerrainLarge)) {
+		
+		//Create vars for terrain object and list size		
+		var largeTerrain = instance_place(x, y + ySpeed, oTerrainLarge)
+		var listSize = ds_list_size(largeTerrain.minilist)
+		
+		//Loop through each miniterrain in list
+		for (var j = 0; j < listSize; j++) {
+			
+			//Check if this object exists
+			if(instance_exists(ds_list_find_value(largeTerrain.minilist,j))) {
+				
+				//If it exists, check if we're colliding with it
+				if(place_meeting(x, y + ySpeed, ds_list_find_value(largeTerrain.minilist,j))) {
+					
+					//If we're colliding with it, flag and switch direction, then break
+					isColliding = true
+					ySpeed = -ySpeed * bounceCoefficient
+					break;
+				}
+			}
+		}
+	}
+	
+}
+
+
+
 //Move the player based on xSpeed/ySpeed
 x += xSpeed
 y += ySpeed

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"rotateTowardsPlayer",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"rotateTowardsPlayer",
+  "parent":{
+    "name":"Enemies",
+    "path":"folders/Scripts/Enemies.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

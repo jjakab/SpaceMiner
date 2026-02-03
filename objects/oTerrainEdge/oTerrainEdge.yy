@@ -29,7 +29,7 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":false,
+  "solid":true,
   "spriteId":{
     "name":"sTerrainEdge1",
     "path":"sprites/sTerrainEdge1/sTerrainEdge1.yy",

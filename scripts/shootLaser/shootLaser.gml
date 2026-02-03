@@ -48,6 +48,9 @@ function shootLaser(laserIndex,offsetLength,offsetAngle){
 					}
 				}
 				
+				//Test if there are any miniterrains remaining in this large grid, and delete it if not
+				with(largeGrid) deleteLargeTerrain()
+				
 				//If we hit something, we want to break out of the outer loop
 				if(hitObj) break;
 				
