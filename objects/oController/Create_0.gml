@@ -17,7 +17,7 @@ var wallWidth = sprite_get_height(sTerrainEdge1)
 		
 	}
 	
-	//Top and bottom row
+	//Left and right columns
 	for (var i = 0; i < room_height / wallWidth; i++) {
 		
 		var leftWall = instance_create_depth(0,i * wallWidth,0,oTerrainEdge)

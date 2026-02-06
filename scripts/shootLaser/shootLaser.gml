@@ -55,6 +55,12 @@ function shootLaser(laserIndex,offsetLength,offsetAngle){
 				if(hitObj) break;
 				
 			}
+			
+			//We have hit terrain master, but it is not large terrain
+			else {
+				hitObj = true;
+				break;
+			}
 
 	    }
 

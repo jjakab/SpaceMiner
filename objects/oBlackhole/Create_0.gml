@@ -1,4 +1,5 @@
 /// @description Initialize
+depth = 1
 
 hasShakenScreen = false
 

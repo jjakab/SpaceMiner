@@ -26,3 +26,9 @@ joystickTwoCurrY = joystickTwoBaseY
 joystickTwoFactor = 0
 joystickTwoAngle = 0
 
+//Variables for fuelbar
+fuelBarXOffset = 16
+fuelBarYOffset = 16
+fuelBarStartingX = 18 //How many pixels from the left side does the full bar start
+fuelBarStartingY = 15 //How many pixels from the top does the full bar start
+

@@ -19,6 +19,12 @@ bounceCoefficient = 0.6
 	trueX = x
 	trueY = y
 
+//Variables related to fuel
+maxFuel = 100
+currentFuel = maxFuel
+fuelBurnRate = 0.05
+
+
 //Variables related to laser - stored for each laser separately
 numLasers = 2
 for (var i = 0; i <= 1; i++) {
