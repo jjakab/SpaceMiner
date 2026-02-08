@@ -4,3 +4,7 @@ with(pairedInterior) {
 	image_speed = other.image_speed	
 }
 
+//Track how this is visually being destroyed
+destroySide = false
+destroyCorner = false
+

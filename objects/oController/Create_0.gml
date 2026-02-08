@@ -12,7 +12,7 @@ spawnStars()
 spawnTerrain()
 
 //Spawn fog of war - 2d array is declared outside of script
-fogWidth = 64
+fogWidth = 32
 var gridWidth = ceil(room_width / fogWidth)
 var gridHeight = ceil(room_height / fogWidth)
 
@@ -24,6 +24,9 @@ spawnFogOfWar()
 if(instance_exists(oPlayerSpaceship)) {
 	playerGridPositionX = floor(oPlayerSpaceship.x / fogWidth)
 	playerGridPositionY = floor(oPlayerSpaceship.y / fogWidth)
+	
+	//Start off 
+	destroyFogOfWarGrid(playerGridPositionX,playerGridPositionY)
 	
 }
 else { //Failsafe

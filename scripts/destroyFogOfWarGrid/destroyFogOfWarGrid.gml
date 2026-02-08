@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function destroyFogOfWarGrid(xGridPos, yGridPos){
 
-	var variance = 1
+	var variance = 2
 	
 	var maxHeight = ds_grid_height(fogGrid)
 	var maxWidth = ds_grid_width(fogGrid)
