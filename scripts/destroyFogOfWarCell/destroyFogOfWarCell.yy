@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"destroyFogOfWarCell",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"destroyFogOfWarCell",
+  "parent":{
+    "name":"Control",
+    "path":"folders/Scripts/Control.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

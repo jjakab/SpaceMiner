@@ -1,17 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"oController",
+  "%Name":"oFogOfWarInterior",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":12,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oController",
+  "name":"oFogOfWarInterior",
   "overriddenProperties":[],
   "parent":{
-    "name":"Control",
-    "path":"folders/Objects/Control.yy",
+    "name":"Fog of War",
+    "path":"folders/Objects/Environment/Fog of War.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sFogOfWarStaticInterior",
+    "path":"sprites/sFogOfWarStaticInterior/sFogOfWarStaticInterior.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

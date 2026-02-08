@@ -3,37 +3,7 @@
 randomize()
 
 //Spawn edge walls
-
-var wallWidth = sprite_get_height(sTerrainEdge1)
-
-	//Top and bottom row
-	for (var i = 1; i < ((room_width - wallWidth) / wallWidth); i++) {
-		
-		var topWall = instance_create_depth(i * wallWidth,0,0,oTerrainEdge)
-		with(topWall) image_angle = 270;
-		
-		var bottomWall = instance_create_depth(i * wallWidth,room_height,0,oTerrainEdge)
-		with(bottomWall) image_angle = 90;
-		
-	}
-	
-	//Left and right columns
-	for (var i = 0; i < room_height / wallWidth; i++) {
-		
-		var leftWall = instance_create_depth(0,i * wallWidth,0,oTerrainEdge)
-		
-		
-		var rightWall = instance_create_depth(room_width,i * wallWidth,0,oTerrainEdge)
-		with(rightWall) image_angle = 180;
-		
-	}
-	
-	//Corners
-	var corner = instance_create_depth(0,0,-1,oTerrainEdge)
-	with(corner) {
-		sprite_index = sTerrainCorner1	
-	}
-
+spawnEdges()
 
 //Spawn stars
 spawnStars()
@@ -41,4 +11,22 @@ spawnStars()
 //Spawn terrain
 spawnTerrain()
 
+//Spawn fog of war - 2d array is declared outside of script
+fogWidth = 64
+var gridWidth = ceil(room_width / fogWidth)
+var gridHeight = ceil(room_height / fogWidth)
 
+fogGrid = ds_grid_create(gridWidth,gridHeight)
+
+spawnFogOfWar()
+
+//Determine player position in fog grid
+if(instance_exists(oPlayerSpaceship)) {
+	playerGridPositionX = floor(oPlayerSpaceship.x / fogWidth)
+	playerGridPositionY = floor(oPlayerSpaceship.y / fogWidth)
+	
+}
+else { //Failsafe
+	playerGridPositionX = 0
+	playerGridPositionY = 0
+}

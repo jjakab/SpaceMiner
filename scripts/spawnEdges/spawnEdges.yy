@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"spawnEdges",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"spawnEdges",
+  "parent":{
+    "name":"Control",
+    "path":"folders/Scripts/Control.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
