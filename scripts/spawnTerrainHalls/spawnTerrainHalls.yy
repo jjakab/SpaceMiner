@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"spawnTerrain",
+  "%Name":"spawnTerrainHalls",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"spawnTerrain",
+  "name":"spawnTerrainHalls",
   "parent":{
     "name":"Control",
     "path":"folders/Scripts/Control.yy",

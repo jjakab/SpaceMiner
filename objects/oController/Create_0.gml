@@ -1,5 +1,8 @@
 /// @description Initialize variables, spawn objects
 
+//DEBUG OVERLAY FOR TESTING
+show_debug_overlay(true)
+
 randomize()
 
 //Spawn edge walls
@@ -9,7 +12,7 @@ spawnEdges()
 spawnStars()
 
 //Spawn terrain
-spawnTerrain()
+spawnTerrainClusters()
 
 //Spawn fog of war - 2d array is declared outside of script
 fogWidth = 32

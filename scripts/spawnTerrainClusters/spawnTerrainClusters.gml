@@ -1,17 +1,12 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function spawnTerrain(){
+function spawnTerrainClusters(){
 
 	var blockWidth = 16
 
 	//Generate random x-location and y-location divisible by our block width
 	var xLoc = irandom(room_width / blockWidth) * blockWidth
 	var yLoc = irandom(room_height / blockWidth) * blockWidth
-
-	//FOR TESTING
-	xLoc = 160
-	yLoc = 160
-
 
 	//How many times will we walk aka how many clusters of terrain exist
 	var walkIterations = 8
@@ -42,7 +37,7 @@ function spawnTerrain(){
 			if(position_meeting(xLoc,yLoc,oTerrainLarge)) show_debug_message("iteration " + string(i) + ": block here")
 			else {
 				instance_create_depth(xLoc,yLoc,0,oTerrainLarge)
-				show_debug_message("iteration " + string(i) + ": PLACED BLOCK AT " + string(xLoc) + ", " + string(yLoc))
+				//show_debug_message("iteration " + string(i) + ": PLACED BLOCK AT " + string(xLoc) + ", " + string(yLoc))
 			}
 		
 		}
