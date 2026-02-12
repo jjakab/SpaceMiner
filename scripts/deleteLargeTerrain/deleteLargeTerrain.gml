@@ -1,6 +1,9 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function deleteLargeTerrain(){
+	
+	//If this hasn't spawned children, just exit - it means it's offscreen and hasn't spawned children
+	if(hasSpawnedChildren = false) return
 
 	//Start off by assuming this large terrain block has no miniterrains associated with it
 	var hasMinis = false;

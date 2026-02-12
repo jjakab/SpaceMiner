@@ -28,23 +28,29 @@ function shootLaser(laserIndex,offsetLength,offsetAngle){
 			//We have hit a large terrain object, and should check its list of miniterrains
 			if(instance_position(lx,ly,oTerrainLarge)) {
 				
-				//Construct a list of the mini-terrains
+				//Find the specific instance
 				var largeGrid = instance_position(lx,ly,oTerrainLarge)
-				var listLength = ds_list_size(largeGrid.minilist)
 				
-				//Loop through each mini-terrain
-				for (var j = 0; j < listLength; j++) {
+				//Make sure the instance has spawned miniterrains - if it's despawned it may not
+				if(largeGrid.hasSpawnedChildren) {
+				
+					//Construct a list of the mini-terrains
+					var listLength = ds_list_size(largeGrid.minilist)
+				
+					//Loop through each mini-terrain
+					for (var j = 0; j < listLength; j++) {
 					
-					//If a mini-terrain is hit, stop the laser and damage the mini-terrain
-					if(instance_position(lx,ly,ds_list_find_value(largeGrid.minilist,j))) {
-							hitObj = true
-							var thingShot = ds_list_find_value(largeGrid.minilist,j)
-							with(thingShot) {
-								hp -= 1
-								if(hp <= 0) instance_destroy()
-							}
+						//If a mini-terrain is hit, stop the laser and damage the mini-terrain
+						if(instance_position(lx,ly,ds_list_find_value(largeGrid.minilist,j))) {
+								hitObj = true
+								var thingShot = ds_list_find_value(largeGrid.minilist,j)
+								with(thingShot) {
+									hp -= 1
+									if(hp <= 0) instance_destroy()
+								}
 			
-							break;
+								break;
+						}
 					}
 				}
 				

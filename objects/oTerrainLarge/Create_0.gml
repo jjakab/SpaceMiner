@@ -3,6 +3,10 @@
 //We want this object to have no hitbox
 mask_index = sGenericBigOutlineMask
 
+hasSpawnedChildren = false
+
+
+/*
 //Create a DS list with all miniframes that are part of this larger block
 minilist = ds_list_create()
 

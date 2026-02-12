@@ -1,0 +1,3 @@
+/// @description Insert description here
+draw_self()
+draw_sprite(sFogOfWarDither,0,x,y)

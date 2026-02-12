@@ -57,6 +57,8 @@
     {"name":"rShop","order":1,"path":"rooms/rShop/rShop.yy",},
     {"name":"destroyFogOfWarCell","order":5,"path":"scripts/destroyFogOfWarCell/destroyFogOfWarCell.yy",},
     {"name":"destroyFogOfWarGrid","order":4,"path":"scripts/destroyFogOfWarGrid/destroyFogOfWarGrid.yy",},
+    {"name":"drawDSGrid","order":2,"path":"scripts/drawDSGrid/drawDSGrid.yy",},
+    {"name":"isVisible","order":1,"path":"scripts/isVisible/isVisible.yy",},
     {"name":"shootLaserAtPlayer","order":1,"path":"scripts/shootLaserAtPlayer/shootLaserAtPlayer.yy",},
     {"name":"spawnEdges","order":3,"path":"scripts/spawnEdges/spawnEdges.yy",},
     {"name":"spawnFogOfWar","order":2,"path":"scripts/spawnFogOfWar/spawnFogOfWar.yy",},

@@ -59,7 +59,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.2.213",
+    "IDEVersion":"2024.14.3.217",
   },
   "name":"SpaceMiner",
   "resources":[
@@ -85,6 +85,8 @@
     {"id":{"name":"deleteLargeTerrain","path":"scripts/deleteLargeTerrain/deleteLargeTerrain.yy",},},
     {"id":{"name":"destroyFogOfWarCell","path":"scripts/destroyFogOfWarCell/destroyFogOfWarCell.yy",},},
     {"id":{"name":"destroyFogOfWarGrid","path":"scripts/destroyFogOfWarGrid/destroyFogOfWarGrid.yy",},},
+    {"id":{"name":"drawDSGrid","path":"scripts/drawDSGrid/drawDSGrid.yy",},},
+    {"id":{"name":"isVisible","path":"scripts/isVisible/isVisible.yy",},},
     {"id":{"name":"rotateTowardsPlayer","path":"scripts/rotateTowardsPlayer/rotateTowardsPlayer.yy",},},
     {"id":{"name":"screenshake","path":"scripts/screenshake/screenshake.yy",},},
     {"id":{"name":"shootLaser","path":"scripts/shootLaser/shootLaser.yy",},},

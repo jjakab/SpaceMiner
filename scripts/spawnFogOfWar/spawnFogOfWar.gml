@@ -9,7 +9,7 @@ function spawnFogOfWar(){
 		for (var j = 0; j < ds_grid_height(fogGrid); j++) {
 			
 			
-			var fog = instance_create_depth((i * fogWidth) + xOffset, (j * fogWidth) + yOffset,0,oFogOfWarExterior)
+			var fog = instance_create_depth((i * fogWidth) + xOffset, (j * fogWidth) + yOffset,-5,oFogOfWarExterior)
 			ds_grid_set(fogGrid,i,j,fog)
 			
 			

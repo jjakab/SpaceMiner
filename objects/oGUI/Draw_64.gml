@@ -17,3 +17,7 @@
 	var fullWidth = sprite_get_width(sFuelBarFull) - (fuelBarStartingX * 2) - (( 3 / 100) * (sprite_get_width(sFuelBarFull) - (fuelBarStartingX * 2)))
 
 	draw_sprite_part(sFuelBarFullCropped,0,0,0,89,sprite_get_height(sFuelBarFullCropped),fuelBarXOffset+fuelBarStartingX,fuelBarYOffset+fuelBarStartingY)
+	
+//STATS FOR TESTING
+draw_text(5,300,"Large Terrain Count: " + string(instance_number(oTerrainLarge)))
+draw_text(5,350,"Mini Count: " + string(instance_number(oTerrainMiniFrame)))

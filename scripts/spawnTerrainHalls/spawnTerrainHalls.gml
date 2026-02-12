@@ -3,9 +3,9 @@
 function spawnTerrainHalls(){
 	
 	
-	var hallsPerSide = 50
-	var hallMinWidth = 5
-	var hallMaxWidth = 7
+	var hallsPerSide = 9
+	var hallMinWidth = 7
+	var hallMaxWidth = 9
 	
 	//Blocks are 16 px wide
 	var blockWidth = 16
@@ -21,16 +21,17 @@ function spawnTerrainHalls(){
 	ds_grid_set_region(wallGrid,0,0,gridWidth,gridHeight,1)
 	
 	var horizontalWallYPos = 0
+	var verticalWallXPos = 0
 	var thisHallWidth = 0
 	
-	//Outer loop for horizontal wall
+	//Outer loop for left --> right
 	for (var i = 0; i < hallsPerSide; i++) {
 		
 		//Generate y-grid position of random point on left wall
-		horizontalWallYPos = irandom_range(i * (hallsPerSide/gridHeight),(i+1) * (hallsPerSide / gridHeight))
+		horizontalWallYPos = irandom_range(i * (gridHeight/hallsPerSide),(i+1) * (gridHeight/hallsPerSide))
 		
-		//For testing purposes
-		horizontalWallYPos = 2
+		//FOR TESTING PURPOSES
+		if (i=0) horizontalWallYPos = 2
 		
 		//Inner loop for each hall
 		for (var j = 0; j < gridWidth; j++) {
@@ -48,15 +49,37 @@ function spawnTerrainHalls(){
 		
 	}
 	
+	//Outer loop for top --> bottom
+	for (var i = 0; i < hallsPerSide; i++) {
+		
+		//Generate y-grid position of random point on left wall
+		verticalWallXPos = irandom_range(i * (gridHeight/hallsPerSide),(i+1) * (gridHeight/hallsPerSide))
+		
+		//Inner loop for each hall
+		for (var j = 0; j < gridHeight; j++) {
+			
+			//Generate a random width for this cell
+			thisHallWidth = irandom_range(hallMinWidth,hallMaxWidth)
+			
+			//Set everything in region to zero to clear it
+			ds_grid_set_region(wallGrid,verticalWallXPos,j,verticalWallXPos+thisHallWidth,j,0)
+			
+			//Modulate vertical position by up to 1, subject to bounds
+			verticalWallXPos = clamp(verticalWallXPos + irandom_range(-1,1),0,gridWidth)
+			
+		}
+		
+	}
+	
 	
 	//Create walls for every grid position that is equal to one
 	for (var i = 0; i < gridWidth; i++) {
 		for (var j = 0; j < gridHeight; j++) {
-			if(ds_grid_get(wallGrid,i,j) = 1) instance_create_depth(i * blockWidth, j + blockWidth, 0, oTerrainLarge)	
+			if(ds_grid_get(wallGrid,i,j) = 1) instance_create_depth(i * blockWidth, j * blockWidth, 0, oTerrainLarge)	
 		}
 	}
 	
-	ds_grid_destroy(wallGrid)
+	//ds_grid_destroy(wallGrid)
 	
 	
 	

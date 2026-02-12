@@ -1,0 +1,1 @@
+drawDSGrid(wallGrid, 50, 50)

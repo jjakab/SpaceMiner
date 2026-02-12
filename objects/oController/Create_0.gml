@@ -12,7 +12,7 @@ spawnEdges()
 spawnStars()
 
 //Spawn terrain
-spawnTerrainClusters()
+spawnTerrainHalls()
 
 //Spawn fog of war - 2d array is declared outside of script
 fogWidth = 32
@@ -36,3 +36,9 @@ else { //Failsafe
 	playerGridPositionX = 0
 	playerGridPositionY = 0
 }
+
+//Activation/Deactivation
+activationInterval = 5 //How many frames do we allow to pass before activating/deactivating
+
+//Set the initial timer
+alarm_set(0,activationInterval)
