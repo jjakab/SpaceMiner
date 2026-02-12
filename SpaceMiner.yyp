@@ -46,11 +46,11 @@
     {"$GMFolder":"","%Name":"Terrain","folderPath":"folders/Sprites/Environment/Terrain.yy","name":"Terrain","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Edge","folderPath":"folders/Sprites/Environment/Terrain/Edge.yy","name":"Edge","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Generic","folderPath":"folders/Sprites/Environment/Terrain/Generic.yy","name":"Generic","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Shop","folderPath":"folders/Sprites/Shop.yy","name":"Shop","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"GUI","folderPath":"folders/Sprites/GUI.yy","name":"GUI","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Fuel Bar","folderPath":"folders/Sprites/GUI/Fuel Bar.yy","name":"Fuel Bar","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Player Spaceship","folderPath":"folders/Sprites/Player Spaceship.yy","name":"Player Spaceship","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Laser","folderPath":"folders/Sprites/Player Spaceship/Laser.yy","name":"Laser","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Shop","folderPath":"folders/Sprites/Shop.yy","name":"Shop","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Tile Sets","folderPath":"folders/Tile Sets.yy","name":"Tile Sets","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Timelines","folderPath":"folders/Timelines.yy","name":"Timelines","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
@@ -59,7 +59,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.3.217",
+    "IDEVersion":"2024.14.2.213",
   },
   "name":"SpaceMiner",
   "resources":[
@@ -72,6 +72,7 @@
     {"id":{"name":"oFogOfWarInterior","path":"objects/oFogOfWarInterior/oFogOfWarInterior.yy",},},
     {"id":{"name":"oGUI","path":"objects/oGUI/oGUI.yy",},},
     {"id":{"name":"oPlayerSpaceship","path":"objects/oPlayerSpaceship/oPlayerSpaceship.yy",},},
+    {"id":{"name":"oShop","path":"objects/oShop/oShop.yy",},},
     {"id":{"name":"oStar","path":"objects/oStar/oStar.yy",},},
     {"id":{"name":"oTerrainEdge","path":"objects/oTerrainEdge/oTerrainEdge.yy",},},
     {"id":{"name":"oTerrainLarge","path":"objects/oTerrainLarge/oTerrainLarge.yy",},},
@@ -79,6 +80,7 @@
     {"id":{"name":"oTerrainMiniFill","path":"objects/oTerrainMiniFill/oTerrainMiniFill.yy",},},
     {"id":{"name":"oTerrainMiniFrame","path":"objects/oTerrainMiniFrame/oTerrainMiniFrame.yy",},},
     {"id":{"name":"psPlayerSpaceship","path":"particles/psPlayerSpaceship/psPlayerSpaceship.yy",},},
+    {"id":{"name":"rShop","path":"rooms/rShop/rShop.yy",},},
     {"id":{"name":"rTest","path":"rooms/rTest/rTest.yy",},},
     {"id":{"name":"deleteLargeTerrain","path":"scripts/deleteLargeTerrain/deleteLargeTerrain.yy",},},
     {"id":{"name":"destroyFogOfWarCell","path":"scripts/destroyFogOfWarCell/destroyFogOfWarCell.yy",},},
@@ -133,6 +135,7 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"rTest","path":"rooms/rTest/rTest.yy",},},
+    {"roomId":{"name":"rShop","path":"rooms/rShop/rShop.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
