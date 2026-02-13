@@ -1,16 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"oShop",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":39,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"oPowerUp1",
+  "eventList":[],
   "managed":true,
-  "name":"oShop",
+  "name":"oPowerUp1",
   "overriddenProperties":[],
   "parent":{
-    "name":"Control",
-    "path":"folders/Objects/Control.yy",
+    "name":"PowerUps",
+    "path":"folders/Objects/Shop/PowerUps.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sPowerup1",
+    "path":"sprites/sPowerup1/sPowerup1.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
