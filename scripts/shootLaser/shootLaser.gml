@@ -85,4 +85,26 @@ function shootLaser(laserIndex,offsetLength,offsetAngle){
 	draw_line_width(laserOneXOrigin, laserOneYOrigin, laserOneXOrigin + lengthdir_x(laserLengthFactor * currLaserLength[laserIndex], image_angle), laserOneYOrigin + lengthdir_y(laserLengthFactor * currLaserLength[laserIndex], image_angle), (height * laserWidth[laserIndex]) + 1);
 	draw_sprite_ext(sLaserCap, height, laserOneXOrigin + lengthdir_x(laserLengthFactor * currLaserLength[laserIndex], image_angle),laserOneYOrigin + lengthdir_y(laserLengthFactor * currLaserLength[laserIndex], image_angle),1,1,image_angle,c_white,1)
 
+	//If the laser hit an object, create a particle burst
+	if(hitObj) {
+		
+		//Change the angle and position of the relevant particle system based on the position of the laser
+		part_system_angle(laserPartSystem[laserIndex],image_angle + 180)
+		part_system_position(laserPartSystem[laserIndex],laserOneXOrigin + lengthdir_x(laserLengthFactor * currLaserLength[laserIndex], image_angle),laserOneYOrigin + lengthdir_y(laserLengthFactor * currLaserLength[laserIndex], image_angle))
+		
+		//Check if the correct number of frames has elapsed
+		if(particleTimer[laserIndex] >= particleFrameReset) {
+			//Emit a burst of particles if it has
+			part_particles_burst(laserPartSystem[laserIndex], 0, 0,psLaserImpact)
+		}
+		else {
+			//Increment the timer if it hasn't
+			particleTimer[laserIndex]++
+		}
+	}
+	//If we haven't hit an object, reset particle timer
+	else {
+		particleTimer[laserIndex] = 0	
+	}
+	
 }

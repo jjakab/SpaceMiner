@@ -1,7 +1,7 @@
 /// @description Initialize variables, spawn objects
 
 //DEBUG OVERLAY FOR TESTING
-show_debug_overlay(true)
+show_debug_overlay(false)
 
 randomize()
 

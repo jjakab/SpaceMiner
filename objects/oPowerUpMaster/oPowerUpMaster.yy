@@ -1,17 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"oPowerUp3",
+  "%Name":"oPowerUpMaster",
   "eventList":[],
   "managed":true,
-  "name":"oPowerUp3",
+  "name":"oPowerUpMaster",
   "overriddenProperties":[],
   "parent":{
     "name":"PowerUps",
     "path":"folders/Objects/Shop/PowerUps.yy",
   },
   "parentObjectId":{
-    "name":"oPowerUpMaster",
-    "path":"objects/oPowerUpMaster/oPowerUpMaster.yy",
+    "name":"oTerrainMaster",
+    "path":"objects/oTerrainMaster/oTerrainMaster.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -30,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sPowerup3",
-    "path":"sprites/sPowerup3/sPowerup3.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

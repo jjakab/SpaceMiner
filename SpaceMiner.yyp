@@ -61,7 +61,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.2.213",
+    "IDEVersion":"2024.14.3.217",
   },
   "name":"SpaceMiner",
   "resources":[
@@ -78,6 +78,7 @@
     {"id":{"name":"oPowerUp2","path":"objects/oPowerUp2/oPowerUp2.yy",},},
     {"id":{"name":"oPowerUp3","path":"objects/oPowerUp3/oPowerUp3.yy",},},
     {"id":{"name":"oPowerUp4","path":"objects/oPowerUp4/oPowerUp4.yy",},},
+    {"id":{"name":"oPowerUpMaster","path":"objects/oPowerUpMaster/oPowerUpMaster.yy",},},
     {"id":{"name":"oShop","path":"objects/oShop/oShop.yy",},},
     {"id":{"name":"oStar","path":"objects/oStar/oStar.yy",},},
     {"id":{"name":"oTerrainEdge","path":"objects/oTerrainEdge/oTerrainEdge.yy",},},
@@ -85,6 +86,7 @@
     {"id":{"name":"oTerrainMaster","path":"objects/oTerrainMaster/oTerrainMaster.yy",},},
     {"id":{"name":"oTerrainMiniFill","path":"objects/oTerrainMiniFill/oTerrainMiniFill.yy",},},
     {"id":{"name":"oTerrainMiniFrame","path":"objects/oTerrainMiniFrame/oTerrainMiniFrame.yy",},},
+    {"id":{"name":"psLaserImpact","path":"particles/psLaserImpact/psLaserImpact.yy",},},
     {"id":{"name":"psPlayerSpaceship","path":"particles/psPlayerSpaceship/psPlayerSpaceship.yy",},},
     {"id":{"name":"rShop","path":"rooms/rShop/rShop.yy",},},
     {"id":{"name":"rTest","path":"rooms/rTest/rTest.yy",},},
@@ -142,8 +144,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"rShop","path":"rooms/rShop/rShop.yy",},},
     {"roomId":{"name":"rTest","path":"rooms/rTest/rTest.yy",},},
+    {"roomId":{"name":"rShop","path":"rooms/rShop/rShop.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

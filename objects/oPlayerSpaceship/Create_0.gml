@@ -43,5 +43,14 @@ laserFrequency = 60 //Modulation time for laser width
 	laserOffsetLength[1] = laserOffsetLength[0]
 	laserOffsetAngle[1] = (360 - laserOffsetAngle[0])
 
+
+//Particle system for laser impact
+particleFrameReset = 5 //How many frames does it take to activate/reactivate a burst
+
+for (i = 0; i < numLasers; i++) {
+	laserPartSystem[i] = part_system_create_layer("Instances",0)
+	particleTimer[i] = 0
+}
+
 //Start timers
 alarm_set(0,laserFrequency) //Laser modulation

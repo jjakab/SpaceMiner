@@ -128,4 +128,7 @@ y += ySpeed
 //Round player's position to nearest clean pixel
 /*x = round(trueX)
 y = round(trueY)
-/*
+*/
+
+//TEST
+//part_particles_burst(laserPartSystem,x+32,y+32,psLaserImpact)

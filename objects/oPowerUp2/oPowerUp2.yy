@@ -9,7 +9,10 @@
     "name":"PowerUps",
     "path":"folders/Objects/Shop/PowerUps.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"oPowerUpMaster",
+    "path":"objects/oPowerUpMaster/oPowerUpMaster.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
