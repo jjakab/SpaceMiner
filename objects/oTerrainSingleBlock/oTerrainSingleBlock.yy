@@ -1,17 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"oTerrainEdge",
-  "eventList":[],
+  "%Name":"oTerrainSingleBlock",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"oTerrainEdge",
+  "name":"oTerrainSingleBlock",
   "overriddenProperties":[],
   "parent":{
     "name":"Terrain",
     "path":"folders/Objects/Environment/Terrain.yy",
   },
   "parentObjectId":{
-    "name":"oTerrainSingleBlock",
-    "path":"objects/oTerrainSingleBlock/oTerrainSingleBlock.yy",
+    "name":"oTerrainMaster",
+    "path":"objects/oTerrainMaster/oTerrainMaster.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -29,11 +31,8 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":true,
-  "spriteId":{
-    "name":"sTerrainEdge1",
-    "path":"sprites/sTerrainEdge1/sTerrainEdge1.yy",
-  },
+  "solid":false,
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

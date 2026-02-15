@@ -10,8 +10,8 @@
     "path":"folders/Objects/Shop/PowerUps.yy",
   },
   "parentObjectId":{
-    "name":"oTerrainMaster",
-    "path":"objects/oTerrainMaster/oTerrainMaster.yy",
+    "name":"oTerrainSingleBlock",
+    "path":"objects/oTerrainSingleBlock/oTerrainSingleBlock.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

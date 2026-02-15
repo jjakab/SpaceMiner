@@ -37,7 +37,7 @@ var isColliding = false
 if(place_meeting(x+xSpeed,y,oTerrainMaster)) {
 	
 	//If the collision is with an edge, set the flag and reverse direction
-	if(place_meeting(x+xSpeed,y,oTerrainEdge)) {
+	if(place_meeting(x+xSpeed,y,oTerrainSingleBlock)) {
 		isColliding = true
 		xSpeed = -xSpeed * bounceCoefficient
 	}
@@ -82,7 +82,7 @@ isColliding = false
 if(place_meeting(x,y+ySpeed,oTerrainMaster)) {
 	
 	//If the collision is with an edge, set the flag and reverse direction
-	if(place_meeting(x,y+ySpeed,oTerrainEdge)) {
+	if(place_meeting(x,y+ySpeed,oTerrainSingleBlock)) {
 		isColliding = true
 		ySpeed = -ySpeed * bounceCoefficient
 	}
@@ -129,6 +129,3 @@ y += ySpeed
 /*x = round(trueX)
 y = round(trueY)
 */
-
-//TEST
-//part_particles_burst(laserPartSystem,x+32,y+32,psLaserImpact)

@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"deleteLargeTerrain",
   "parent":{
-    "name":"Misc",
-    "path":"folders/Scripts/Misc.yy",
+    "name":"Terrain",
+    "path":"folders/Scripts/Terrain.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

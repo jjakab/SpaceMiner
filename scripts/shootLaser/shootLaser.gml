@@ -96,6 +96,7 @@ function shootLaser(laserIndex,offsetLength,offsetAngle){
 		if(particleTimer[laserIndex] >= particleFrameReset) {
 			//Emit a burst of particles if it has
 			part_particles_burst(laserPartSystem[laserIndex], 0, 0,psLaserImpact)
+			particleTimer[laserIndex] = 0
 		}
 		else {
 			//Increment the timer if it hasn't

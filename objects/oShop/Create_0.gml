@@ -11,7 +11,7 @@ global.shopItemPool = [
 var totalWidth = (itemCount - 1) * itemSpacing;
 
 //Starting position (centered in room)
-var startX = (room_width - totalWidth) * 0.5;
+var startX = (room_width - totalWidth - sprite_get_width(sPowerup1)) * 0.5;
 var startY = room_height * 0.5;
 
 //Copying the global shop array
