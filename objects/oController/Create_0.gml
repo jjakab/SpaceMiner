@@ -11,15 +11,28 @@ spawnEdges()
 //Spawn stars
 spawnStars()
 
+	
+//Denote width/height of grid
+blockWidth = 16
+gridWidth = ceil(room_width / blockWidth)
+gridHeight = ceil(room_height / blockWidth)
+	
+//Create grid
+wallGrid = ds_grid_create(gridWidth,gridHeight)
+
 //Spawn terrain
 spawnTerrainHalls()
 
+//Get turret list
+var turretPositions = spawnTurret()
+show_debug_message(turretPositions)
+
 //Spawn fog of war - 2d array is declared outside of script
 fogWidth = 32
-var gridWidth = ceil(room_width / fogWidth)
-var gridHeight = ceil(room_height / fogWidth)
+var fogGridWidth = ceil(room_width / fogWidth)
+var fogGridHeight = ceil(room_height / fogWidth)
 
-fogGrid = ds_grid_create(gridWidth,gridHeight)
+fogGrid = ds_grid_create(fogGridWidth,fogGridHeight)
 
 spawnFogOfWar()
 

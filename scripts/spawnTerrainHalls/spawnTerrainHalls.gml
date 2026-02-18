@@ -1,21 +1,8 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function spawnTerrainHalls(){
-	
 	
 	var hallsPerSide = 9
 	var hallMinWidth = 7
 	var hallMaxWidth = 9
-	
-	//Blocks are 16 px wide
-	var blockWidth = 16
-	
-	//DDenote width/height of grid
-	var gridWidth = ceil(room_width / blockWidth)
-	var gridHeight = ceil(room_height / blockWidth)
-	
-	//Create grid
-	wallGrid = ds_grid_create(gridWidth,gridHeight)
 	
 	//Start off by assuming every single cell contains a wall
 	ds_grid_set_region(wallGrid,0,0,gridWidth,gridHeight,1)

@@ -23,8 +23,8 @@
     {"$GMFolder":"","%Name":"Terrain","folderPath":"folders/Objects/Environment/Terrain.yy","name":"Terrain","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Edge","folderPath":"folders/Objects/Environment/Terrain/Edge.yy","name":"Edge","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Generic","folderPath":"folders/Objects/Environment/Terrain/Generic.yy","name":"Generic","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Ore","folderPath":"folders/Objects/Environment/Terrain/Ore.yy","name":"Ore","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Inheritable","folderPath":"folders/Objects/Environment/Terrain/Inheritable.yy","name":"Inheritable","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Ore","folderPath":"folders/Objects/Environment/Terrain/Ore.yy","name":"Ore","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Player","folderPath":"folders/Objects/Player.yy","name":"Player","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Shop","folderPath":"folders/Objects/Shop.yy","name":"Shop","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"PowerUps","folderPath":"folders/Objects/Shop/PowerUps.yy","name":"PowerUps","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -66,7 +66,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.3.217",
+    "IDEVersion":"2024.14.2.213",
   },
   "name":"SpaceMiner",
   "resources":[
@@ -114,6 +114,7 @@
     {"id":{"name":"spawnStars","path":"scripts/spawnStars/spawnStars.yy",},},
     {"id":{"name":"spawnTerrainClusters","path":"scripts/spawnTerrainClusters/spawnTerrainClusters.yy",},},
     {"id":{"name":"spawnTerrainHalls","path":"scripts/spawnTerrainHalls/spawnTerrainHalls.yy",},},
+    {"id":{"name":"spawnTurret","path":"scripts/spawnTurret/spawnTurret.yy",},},
     {"id":{"name":"vectorAngle","path":"scripts/vectorAngle/vectorAngle.yy",},},
     {"id":{"name":"sBackground","path":"sprites/sBackground/sBackground.yy",},},
     {"id":{"name":"sBlackhole","path":"sprites/sBlackhole/sBlackhole.yy",},},
