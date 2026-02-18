@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"oTerrainMaster",
+  "%Name":"oEnemy2",
   "eventList":[],
   "managed":true,
-  "name":"oTerrainMaster",
+  "name":"oEnemy2",
   "overriddenProperties":[],
   "parent":{
-    "name":"Inheritable",
-    "path":"folders/Objects/Environment/Terrain/Inheritable.yy",
+    "name":"Enemies",
+    "path":"folders/Objects/Enemies.yy",
   },
   "parentObjectId":null,
   "persistent":false,

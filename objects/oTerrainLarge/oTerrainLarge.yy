@@ -10,8 +10,8 @@
   "name":"oTerrainLarge",
   "overriddenProperties":[],
   "parent":{
-    "name":"Terrain",
-    "path":"folders/Objects/Environment/Terrain.yy",
+    "name":"Generic",
+    "path":"folders/Objects/Environment/Terrain/Generic.yy",
   },
   "parentObjectId":{
     "name":"oTerrainMaster",

@@ -75,7 +75,9 @@ function spawnTerrainHalls(){
 	//Create walls for every grid position that is equal to one
 	for (var i = 0; i < gridWidth; i++) {
 		for (var j = 0; j < gridHeight; j++) {
-			if(ds_grid_get(wallGrid,i,j) = 1) instance_create_depth(i * blockWidth, j * blockWidth, 0, oTerrainLarge)	
+			if(ds_grid_get(wallGrid,i,j) = 1) {
+				instance_create_depth(i * blockWidth, j * blockWidth, 0, decideSingularTerrain())	
+			}
 		}
 	}
 	

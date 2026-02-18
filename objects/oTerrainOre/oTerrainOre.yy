@@ -1,15 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"oTerrainMaster",
+  "%Name":"oTerrainOre",
   "eventList":[],
   "managed":true,
-  "name":"oTerrainMaster",
+  "name":"oTerrainOre",
   "overriddenProperties":[],
   "parent":{
-    "name":"Inheritable",
-    "path":"folders/Objects/Environment/Terrain/Inheritable.yy",
+    "name":"Ore",
+    "path":"folders/Objects/Environment/Terrain/Ore.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"oTerrainSingleBlock",
+    "path":"objects/oTerrainSingleBlock/oTerrainSingleBlock.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -27,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sOre",
+    "path":"sprites/sOre/sOre.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"decideSingularTerrain",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"decideSingularTerrain",
+  "parent":{
+    "name":"Control",
+    "path":"folders/Scripts/Control.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

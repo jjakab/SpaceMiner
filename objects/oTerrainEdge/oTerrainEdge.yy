@@ -6,8 +6,8 @@
   "name":"oTerrainEdge",
   "overriddenProperties":[],
   "parent":{
-    "name":"Terrain",
-    "path":"folders/Objects/Environment/Terrain.yy",
+    "name":"Edge",
+    "path":"folders/Objects/Environment/Terrain/Edge.yy",
   },
   "parentObjectId":{
     "name":"oTerrainSingleBlock",

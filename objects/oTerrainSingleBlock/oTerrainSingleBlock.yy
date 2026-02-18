@@ -8,8 +8,8 @@
   "name":"oTerrainSingleBlock",
   "overriddenProperties":[],
   "parent":{
-    "name":"Terrain",
-    "path":"folders/Objects/Environment/Terrain.yy",
+    "name":"Inheritable",
+    "path":"folders/Objects/Environment/Terrain/Inheritable.yy",
   },
   "parentObjectId":{
     "name":"oTerrainMaster",
