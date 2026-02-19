@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"spawnTurret",
+  "%Name":"spawnTurrets",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"spawnTurret",
+  "name":"spawnTurrets",
   "parent":{
     "name":"Control",
     "path":"folders/Scripts/Control.yy",

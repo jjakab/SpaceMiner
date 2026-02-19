@@ -1,4 +1,4 @@
-function spawnTurret()
+function generateTurretLocations()
 {
     var grid_w = ds_grid_width(wallGrid);
     var grid_h = ds_grid_height(wallGrid);

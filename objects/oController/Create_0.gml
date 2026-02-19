@@ -23,8 +23,12 @@ wallGrid = ds_grid_create(gridWidth,gridHeight)
 //Spawn terrain
 spawnTerrainHalls()
 
-//Get turret list
-var turretPositions = spawnTurret()
+//Get list of turret locations
+var turretPositions = generateTurretLocations()
+
+//Spawn a specified number of turrets based on list
+spawnTurrets(turretPositions,25)
+
 show_debug_message(turretPositions)
 
 //Spawn fog of war - 2d array is declared outside of script
@@ -51,7 +55,7 @@ else { //Failsafe
 }
 
 //Activation/Deactivation
-activationInterval = 5 //How many frames do we allow to pass before activating/deactivating
+activationInterval = 5 //How many frames do we allow to pass before activating/deactivating instances
 
 //Set the initial timer
 alarm_set(0,activationInterval)

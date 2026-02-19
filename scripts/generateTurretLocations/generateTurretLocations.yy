@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"generateTurretLocations",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"generateTurretLocations",
+  "parent":{
+    "name":"Control",
+    "path":"folders/Scripts/Control.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
