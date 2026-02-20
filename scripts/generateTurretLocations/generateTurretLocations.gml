@@ -23,7 +23,7 @@ function generateTurretLocations()
                 array_push(valid_positions, {gx: gx, gy: gy, dir: 0});
             }
             // EAST (1)
-            if (
+            else if (
                 wallGrid[# gx + 1, gy] == 0 &&
                 wallGrid[# gx, gy - 1] == 0 &&
                 wallGrid[# gx, gy + 1] == 0 &&
@@ -34,7 +34,7 @@ function generateTurretLocations()
                 array_push(valid_positions, {gx: gx, gy: gy, dir: 1});
             }
             // SOUTH (2)
-            if (
+            else if (
                 wallGrid[# gx, gy + 1] == 0 &&
                 wallGrid[# gx - 1, gy] == 0 &&
                 wallGrid[# gx + 1, gy] == 0 &&
@@ -45,7 +45,7 @@ function generateTurretLocations()
                 array_push(valid_positions, {gx: gx, gy: gy, dir: 2});
             }
             // WEST (3)
-            if (
+            else if (
                 wallGrid[# gx - 1, gy] == 0 &&
                 wallGrid[# gx, gy - 1] == 0 &&
                 wallGrid[# gx, gy + 1] == 0 &&
