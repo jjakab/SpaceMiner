@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"singleBlockTakeDamage",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"singleBlockTakeDamage",
+  "parent":{
+    "name":"Terrain",
+    "path":"folders/Scripts/Terrain.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

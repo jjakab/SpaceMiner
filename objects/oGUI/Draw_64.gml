@@ -14,10 +14,14 @@
 	draw_sprite_ext(sFuelBarEmpty,0,fuelBarXOffset,fuelBarYOffset,1,1,0,c_white,1)
 
 	//Calculate
-	var fullWidth = sprite_get_width(sFuelBarFull) - (fuelBarStartingX * 2) - (( 3 / 100) * (sprite_get_width(sFuelBarFull) - (fuelBarStartingX * 2)))
+	var fullWidth = sprite_get_width(sFuelBarFull) - (fuelBarStartingX * 2)
+	var fuelRatio = oPlayerSpaceship.currentFuel / oPlayerSpaceship.maxFuel
 
-	draw_sprite_part(sFuelBarFullCropped,0,0,0,89,sprite_get_height(sFuelBarFullCropped),fuelBarXOffset+fuelBarStartingX,fuelBarYOffset+fuelBarStartingY)
+	draw_sprite_part(sFuelBarFullCropped,0,0,0,fuelRatio * fullWidth,sprite_get_height(sFuelBarFullCropped),fuelBarXOffset+fuelBarStartingX,fuelBarYOffset+fuelBarStartingY)
 	
+//Draw the pause button
+	draw_sprite_ext(sPauseButton,0,view_get_wport(view_current)-sprite_get_width(sPauseButton),0,1,1,0,c_white,1)
+
 //STATS FOR TESTING
 draw_text(5,300,"Large Terrain Count: " + string(instance_number(oTerrainLarge)))
 draw_text(5,350,"Mini Count: " + string(instance_number(oTerrainMiniFrame)))

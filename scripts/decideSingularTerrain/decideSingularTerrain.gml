@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function decideSingularTerrain(){
 
-	if(random(1) < .1) return oTerrainOre
+	if(random(1) < .05) return oTerrainOre
 
 	return oTerrainLarge
 

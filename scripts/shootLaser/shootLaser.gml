@@ -62,7 +62,13 @@ function shootLaser(laserIndex,offsetLength,offsetAngle){
 				
 			}
 			
-			//We have hit terrain master, but it is not large terrain
+			else if (instance_position(lx,ly,oTerrainSingleBlock)) {
+				var singleBlock = instance_position(lx,ly,oTerrainSingleBlock)
+				with(singleBlock) singleBlockTakeDamage(1)
+				hitObj = true
+				break;
+			}
+			//We have hit terrain master, but it is not large terrain or a single block
 			else {
 				hitObj = true;
 				break;

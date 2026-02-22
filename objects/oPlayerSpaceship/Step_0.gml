@@ -22,8 +22,12 @@ else {
 
 //If the left joystick is being used, adjust the player's speed
 if(leftFactor > 0) {
-	xSpeed += accelerationSpeed * lengthdir_x(leftFactor,leftAngle)
-	ySpeed += accelerationSpeed * lengthdir_y(leftFactor,leftAngle)
+	//First check that the player has fuel
+	if(currentFuel > 0) {
+		xSpeed += accelerationSpeed * lengthdir_x(leftFactor,leftAngle)
+		ySpeed += accelerationSpeed * lengthdir_y(leftFactor,leftAngle)
+		currentFuel = max(0,currentFuel - (leftFactor * fuelBurnRate))
+	}
 }
 
 //Regardless of whether the left joystick is being used, we slow the player
