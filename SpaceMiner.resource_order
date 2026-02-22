@@ -7,6 +7,7 @@
     {"name":"Objects","order":9,"path":"folders/Objects.yy",},
     {"name":"Control","order":4,"path":"folders/Objects/Control.yy",},
     {"name":"Enemies","order":8,"path":"folders/Objects/Enemies.yy",},
+    {"name":"Turret","order":3,"path":"folders/Objects/Enemies/Turret.yy",},
     {"name":"Environment","order":6,"path":"folders/Objects/Environment.yy",},
     {"name":"Fog of War","order":8,"path":"folders/Objects/Environment/Fog of War.yy",},
     {"name":"Other","order":7,"path":"folders/Objects/Environment/Other.yy",},
@@ -53,7 +54,7 @@
   ],
   "ResourceOrderSettings":[
     {"name":"oCamera","order":2,"path":"objects/oCamera/oCamera.yy",},
-    {"name":"oEnemy2","order":1,"path":"objects/oEnemy2/oEnemy2.yy",},
+    {"name":"oEnemyTurretBullet","order":1,"path":"objects/oEnemyTurretBullet/oEnemyTurretBullet.yy",},
     {"name":"oFogOfWarExterior","order":1,"path":"objects/oFogOfWarExterior/oFogOfWarExterior.yy",},
     {"name":"oGUI","order":1,"path":"objects/oGUI/oGUI.yy",},
     {"name":"oMine","order":2,"path":"objects/oMine/oMine.yy",},
@@ -117,5 +118,6 @@
     {"name":"sTerrainCorner1","order":2,"path":"sprites/sTerrainCorner1/sTerrainCorner1.yy",},
     {"name":"sTurretBarrel","order":1,"path":"sprites/sTurretBarrel/sTurretBarrel.yy",},
     {"name":"sTurretBarrelLaser","order":2,"path":"sprites/sTurretBarrelLaser/sTurretBarrelLaser.yy",},
+    {"name":"sTurretBullet","order":3,"path":"sprites/sTurretBullet/sTurretBullet.yy",},
   ],
 }
