@@ -80,6 +80,7 @@
     {"name":"isVisible","order":1,"path":"scripts/isVisible/isVisible.yy",},
     {"name":"shootLaserAtPlayer","order":1,"path":"scripts/shootLaserAtPlayer/shootLaserAtPlayer.yy",},
     {"name":"singleBlockTakeDamage","order":1,"path":"scripts/singleBlockTakeDamage/singleBlockTakeDamage.yy",},
+    {"name":"spawnBlackhole","order":10,"path":"scripts/spawnBlackhole/spawnBlackhole.yy",},
     {"name":"spawnEdges","order":3,"path":"scripts/spawnEdges/spawnEdges.yy",},
     {"name":"spawnFogOfWar","order":2,"path":"scripts/spawnFogOfWar/spawnFogOfWar.yy",},
     {"name":"spawnTerrainClusters","order":1,"path":"scripts/spawnTerrainClusters/spawnTerrainClusters.yy",},
@@ -115,5 +116,6 @@
     {"name":"sTerrainCorner","order":1,"path":"sprites/sTerrainCorner/sTerrainCorner.yy",},
     {"name":"sTerrainCorner1","order":2,"path":"sprites/sTerrainCorner1/sTerrainCorner1.yy",},
     {"name":"sTurretBarrel","order":1,"path":"sprites/sTurretBarrel/sTurretBarrel.yy",},
+    {"name":"sTurretBarrelLaser","order":2,"path":"sprites/sTurretBarrelLaser/sTurretBarrelLaser.yy",},
   ],
 }

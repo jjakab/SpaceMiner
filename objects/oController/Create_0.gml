@@ -11,6 +11,8 @@ spawnEdges()
 //Spawn stars
 spawnStars()
 
+//spawnBlackhole()
+
 	
 //Denote width/height of grid
 blockWidth = 16
