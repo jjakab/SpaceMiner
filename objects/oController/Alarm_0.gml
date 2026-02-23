@@ -12,8 +12,8 @@ var vw = camera_get_view_width(view_camera[0])
 var vh = camera_get_view_height(view_camera[0])
 
 //Declare a variable for buffer around current camera view we want to activate
-var buffer = 50
+var buffer = 16
 
-instance_activate_region(vx - buffer, vy - buffer, vx + vw + buffer, vy + vh + buffer,true)
+instance_activate_region(vx - buffer, vy - buffer, vw + (buffer * 2),  vh + (buffer * 2),true)
 
 alarm_set(0,activationInterval)
