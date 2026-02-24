@@ -48,9 +48,14 @@ laserFrequency = 60 //Modulation time for laser width
 particleFrameReset = 5 //How many frames does it take to activate/reactivate a burst
 
 for (i = 0; i < numLasers; i++) {
-	laserPartSystem[i] = part_system_create_layer("Instances",0)
+	laserPartSystem[i] = part_system_create_layer("ParticleLayer",0)
 	particleTimer[i] = 0
 }
+
+//Particle system for player trail
+trailPartSystem = part_system_create_layer("ParticleLayer",0)
+trailPartFrequency = 15
+trailPartTimer = 0
 
 //Start timers
 alarm_set(0,laserFrequency) //Laser modulation

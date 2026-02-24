@@ -24,9 +24,16 @@ else {
 if(leftFactor > 0) {
 	//First check that the player has fuel
 	if(currentFuel > 0) {
+		
+		//Speed up
 		xSpeed += accelerationSpeed * lengthdir_x(leftFactor,leftAngle)
 		ySpeed += accelerationSpeed * lengthdir_y(leftFactor,leftAngle)
+		
+		//Burn fuel
 		currentFuel = max(0,currentFuel - (leftFactor * fuelBurnRate))
+		
+		//Increment particle timer
+		trailPartTimer += leftFactor
 	}
 }
 
@@ -121,6 +128,12 @@ if(place_meeting(x,y+ySpeed,oTerrainMaster)) {
 			}
 		}
 	}
+}
+
+//If timer has elapsed, emit burst and reset timer
+if(trailPartTimer >= trailPartFrequency) {
+	part_particles_burst(trailPartSystem,x,y,psPlayerSpaceship)
+	trailPartTimer = 0	
 }
 
 
