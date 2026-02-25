@@ -11,7 +11,7 @@ spawnEdges()
 //Spawn stars
 spawnStars()
 
-spawnBlackhole()
+//spawnBlackhole()
 
 	
 //Denote width/height of grid

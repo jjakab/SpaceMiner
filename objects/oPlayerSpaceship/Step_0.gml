@@ -130,13 +130,34 @@ if(place_meeting(x,y+ySpeed,oTerrainMaster)) {
 	}
 }
 
+//Check for blackhole collision
+if(place_meeting(x,y,oBlackhole)) {
+	hasHitBlackhole = true
+}
+
+//If player has hit black hole, increment gravity and decrement image scale
+if(hasHitBlackhole) {
+	
+	//Set scale to ratio of distance to blackhole center
+	currentScale = min(1,point_distance(x,y,oBlackhole.x,oBlackhole.y)/(sprite_get_width(sBlackholeCollisionMask) / 2))
+	image_xscale = currentScale
+	image_yscale = currentScale
+	
+	gravity += gravIncrement
+	gravity_direction = point_direction(x,y,oBlackhole.x,oBlackhole.y)
+	
+	//If current scale is zero, teleport to next level
+	if(currentScale = 0.1) {
+		
+	}
+}
+
+
 //If timer has elapsed, emit burst and reset timer
 if(trailPartTimer >= trailPartFrequency) {
 	part_particles_burst(trailPartSystem,x,y,psPlayerSpaceship)
 	trailPartTimer = 0	
 }
-
-
 
 //Move the player based on xSpeed/ySpeed
 x += xSpeed

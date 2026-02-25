@@ -24,6 +24,12 @@ maxFuel = 100
 currentFuel = maxFuel
 fuelBurnRate = 0.0005
 
+//Variables related to blackhole grav
+hasHitBlackhole = false
+currentScale = 1 //Current image scale
+scaleThreshold = 0.1 //How small does scale need to be before triggering teleport
+gravIncrement = 0.001 //How fast does gravity increment
+
 
 //Variables related to laser - stored for each laser separately
 numLasers = 2
