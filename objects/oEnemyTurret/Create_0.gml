@@ -5,6 +5,14 @@ if (!variable_instance_exists(id, "baseAngle"))
 {
     baseAngle = image_angle;
 }
+enum TurretState {
+    TRACKING,
+    CHARGING,
+    AIMING
+}
+
+currentState = TurretState.TRACKING;
+
 barrelAngle = baseAngle;
 rotationLimit = 80;
 //Max rotation per second
@@ -15,3 +23,6 @@ detectionRange = 300;
 fireCooldown = 5;
 fireTimer = 0;
 bulletSpeed = 3; 
+preFireDelay = 1.5;
+preFireTimer = 0;
+isCharging = false;
