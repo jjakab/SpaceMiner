@@ -10,10 +10,13 @@
   "name":"oMine",
   "overriddenProperties":[],
   "parent":{
-    "name":"Enemies",
-    "path":"folders/Objects/Enemies.yy",
+    "name":"Mine",
+    "path":"folders/Objects/Enemies/Mine.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"oTerrainSingleBlock",
+    "path":"objects/oTerrainSingleBlock/oTerrainSingleBlock.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

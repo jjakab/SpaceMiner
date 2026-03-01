@@ -74,7 +74,7 @@ function shootLaser(laserIndex,offsetLength,offsetAngle){
 				break;
 			}
 
-	    }
+		}
 
 	}
 	

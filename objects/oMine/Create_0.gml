@@ -14,3 +14,16 @@ var rand = irandom(1)
 if(rand = 0) rand = -1
 
 angleIncrement = angleIncrement * rand
+
+enum MineState {
+    IDLE,
+    TRIGGERED
+}
+
+currentState = MineState.IDLE;
+
+damage = 25;
+triggerRadius = 40;
+
+//Seconds before explosion
+explodeTimer = 1;
