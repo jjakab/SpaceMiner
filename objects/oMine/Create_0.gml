@@ -5,7 +5,7 @@ hp = 10
 //Offset to center of cell
 x+= 8
 y+= 8
-event_inherited()
+
 //Randomize starting angle
 image_angle = irandom(360)
 
