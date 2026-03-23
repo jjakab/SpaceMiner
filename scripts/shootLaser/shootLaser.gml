@@ -22,6 +22,14 @@ function shootLaser(laserIndex,offsetLength,offsetAngle){
 	    lx = laserOneXOrigin + lengthdir_x(i, image_angle);
 	    ly = laserOneYOrigin + lengthdir_y(i, image_angle);
 
+		if (instance_position(lx, ly, oHunterDrone))
+		{
+			var hunterDrone = instance_position(lx, ly, oHunterDrone)
+			with(hunterDrone) hunterDroneTakeDamage(1)
+			hitObj = true
+			break;
+		}
+
 		//Check if we hit an object
 	    if(collision_point(lx, ly, oTerrainMaster, false, true)){
 			

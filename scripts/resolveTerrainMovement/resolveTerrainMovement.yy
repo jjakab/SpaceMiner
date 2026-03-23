@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"resolveTerrainMovement",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"resolveTerrainMovement",
+  "parent":{
+    "name":"Utility",
+    "path":"folders/Scripts/Utility.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

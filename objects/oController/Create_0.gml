@@ -31,6 +31,9 @@ var turretPositions = generateTurretLocations()
 //Spawn a specified number of turrets based on list
 spawnTurrets(turretPositions,25)
 
+//Spawn drones that patrol around ore fields
+spawnHunterDrones(12)
+
 show_debug_message(turretPositions)
 
 //Spawn fog of war - 2d array is declared outside of script
