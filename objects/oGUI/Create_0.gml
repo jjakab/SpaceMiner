@@ -3,6 +3,13 @@
 cameraWidth = view_wport[0]
 cameraHeight = view_hport[0]
 
+enum joystickPermutations
+{
+	LEFT,
+	IDLE,
+	RIGHT
+}
+
 //How far do we want the joystick to be able to move from the center
 maxJoystickDistance = 70
 
@@ -25,6 +32,10 @@ joystickTwoCurrY = joystickTwoBaseY
 
 joystickTwoFactor = 0
 joystickTwoAngle = 0
+
+//Variable for input devices (touches)
+devicePerm[0] = joystickPermutations.IDLE
+devicePerm[1] = joystickPermutations.IDLE
 
 //Variables for fuelbar
 fuelBarXOffset = 16

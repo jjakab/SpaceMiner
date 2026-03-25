@@ -11,7 +11,7 @@ rightFactor = 0
 maxSpinSpeed = 3
 xSpeed = 0
 ySpeed = 0
-accelerationSpeed = .0003
+accelerationSpeed = .03
 slowFactor = 0.99
 bounceCoefficient = 0.6
 

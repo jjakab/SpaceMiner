@@ -13,11 +13,14 @@ for (var i = 0; i < maxDevices; i++)
         var touchY = device_mouse_y_to_gui(i);
         
 		if(device_mouse_check_button(i,mb_left)) {
+			
 			//Check if press is on left side of screen - this means it's for joystick one
-	        if ((touchX > 0) and (touchX < (cameraWidth / 2))) {
+	        if (devicePerm[i] = joystickPermutations.LEFT or
+				(devicePerm[i] = joystickPermutations.IDLE and ((touchX > 0) and (touchX < (cameraWidth / 2))))) {
 				
 				//Note that left joystick is being used
 				leftTouch = true
+				devicePerm[i] = joystickPermutations.LEFT
 		
 				//Get the angle between the base and curr position - we use a custom function for this because touch position is measured relative to GUI layer
 				var joystickAngle = vectorAngle(joystickOneBaseX,joystickOneBaseY,touchX,touchY)
@@ -29,16 +32,18 @@ for (var i = 0; i < maxDevices; i++)
 				joystickOneCurrX = joystickOneBaseX + (min(maxJoystickDistance,joystickDistance) * cos(degtorad(joystickAngle)))
 				joystickOneCurrY = joystickOneBaseY + (min(maxJoystickDistance,joystickDistance) * sin(degtorad(joystickAngle)))
 				
-				joystickOneFactor = max(1,abs(joystickDistance),maxJoystickDistance)
+				joystickOneFactor = min(1,abs(joystickDistance)/maxJoystickDistance)
 				joystickOneAngle = joystickAngle
 
 			}
 			
 			//Check if press is on the right side of the screen - this means it's for joystick two
-			else if ((touchX > 0) and (touchX > (cameraWidth / 2))) {
+			else if (devicePerm[i] = joystickPermutations.RIGHT or 
+			(devicePerm[i] = joystickPermutations.IDLE and (touchX > 0) and (touchX > (cameraWidth / 2)))) {
 		
 				//Note that left joystick is being used
 				rightTouch = true
+				devicePerm[i] = joystickPermutations.RIGHT
 		
 				//Get the angle between the base and curr position - we use a custom function for this because touch position is measured relative to GUI layer
 				var joystickAngle = vectorAngle(joystickTwoBaseX,joystickTwoBaseY,touchX,touchY)
@@ -50,11 +55,16 @@ for (var i = 0; i < maxDevices; i++)
 				joystickTwoCurrX = joystickTwoBaseX + (min(maxJoystickDistance,joystickDistance) * cos(degtorad(joystickAngle)))
 				joystickTwoCurrY = joystickTwoBaseY + (min(maxJoystickDistance,joystickDistance) * sin(degtorad(joystickAngle)))
 				
-				joystickTwoFactor = max(1,abs(joystickDistance),maxJoystickDistance)
+				joystickTwoFactor = min(1,abs(joystickDistance)/maxJoystickDistance)
 				joystickTwoAngle = joystickAngle
 
 			}
 			
+		}
+		
+		//Device isn't pressed - reset the joystick permutation
+		else {
+			devicePerm[i] = joystickPermutations.IDLE
 		}
 		
 		//If one joystick wasn't used, reset the position	
