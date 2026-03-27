@@ -13,9 +13,8 @@
 	draw_sprite_ext(sFuelBarBracket,0,fuelBarXOffset,fuelBarYOffset,1,1,0,c_white,1)
 	draw_sprite_ext(sFuelBarEmpty,0,fuelBarXOffset,fuelBarYOffset,1,1,0,c_white,1)
 
-	//Calculate
-	var fullWidth = sprite_get_width(sFuelBarFull) - (fuelBarStartingX * 2)
-	var fuelRatio = oPlayerSpaceship.currentFuel / oPlayerSpaceship.maxFuel
+	//Calculate fuel ratio (only if player exists)
+	if(instance_exists(oPlayerSpaceship)) fuelRatio = oPlayerSpaceship.currentFuel / oPlayerSpaceship.maxFuel
 
 	draw_sprite_part(sFuelBarFullCropped,0,0,0,fuelRatio * fullWidth,sprite_get_height(sFuelBarFullCropped),fuelBarXOffset+fuelBarStartingX,fuelBarYOffset+fuelBarStartingY)
 	

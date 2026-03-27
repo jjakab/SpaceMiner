@@ -21,7 +21,13 @@ bounceCoefficient = 0.6
 
 //Variables related to fuel
 maxFuel = 100
-currentFuel = maxFuel
+//NEEDS TO BE CHANGED WHEN GAME IS RESTARTED
+if(variable_global_exists("playerCurrentFuel")) {
+	currentFuel = global.playerCurrentFuel
+}
+else {
+	currentFuel = maxFuel
+}
 fuelBurnRate = 0.0005
 
 //Variables related to blackhole grav

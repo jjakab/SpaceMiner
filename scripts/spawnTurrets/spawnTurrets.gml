@@ -15,6 +15,9 @@ function spawnTurrets(turretArray, numTurrets){
 
 	for (var i = 0; i < numTurrets; i++) {
 		
+		//Make sure we aren't out of bounds - if we are stop spawning turrets
+		if(i >= array_length(turretArray)) break;
+		
 		spawnX = struct_get(array_get(turretArray,i),"gx") * blockWidth
 		spawnY = struct_get(array_get(turretArray,i),"gy") * blockWidth
 		

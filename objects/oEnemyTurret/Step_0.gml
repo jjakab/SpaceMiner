@@ -1,14 +1,24 @@
 //Calculate time passed + distance once
 var dt = delta_time / 1000000;
-var dist = point_distance(x, y, oPlayerSpaceship.x, oPlayerSpaceship.y);
+if(instance_exists(oPlayerSpaceship)) {
+	var dist = point_distance(x, y, oPlayerSpaceship.x, oPlayerSpaceship.y);
+}
+else {
+	var dist = 999	
+}
 //Rotate back to base angle if player too far
 var desiredAngle = baseAngle;
 var canAim = false;
 //Enter pewpew mode if player is close enough (rotate barrel + activate shooting)
 if (dist <= detectionRange)
 {
-    var targetAngle = point_direction(x, y, oPlayerSpaceship.x, oPlayerSpaceship.y);
-    var offsetFromBase = angle_difference(targetAngle, baseAngle);
+    if (instance_exists(oPlayerSpaceship)) {
+		var targetAngle = point_direction(x, y, oPlayerSpaceship.x, oPlayerSpaceship.y);
+	}
+	else { 
+		var targetAngle = 0
+	}
+	var offsetFromBase = angle_difference(targetAngle, baseAngle);
     offsetFromBase = clamp(offsetFromBase, -rotationLimit, rotationLimit);
     desiredAngle = baseAngle + offsetFromBase;
     canAim = true;
