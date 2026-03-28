@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"decideSingularTerrain",
   "parent":{
-    "name":"Control",
-    "path":"folders/Scripts/Control.yy",
+    "name":"Misc",
+    "path":"folders/Scripts/Control/Misc.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

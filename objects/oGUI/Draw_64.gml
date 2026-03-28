@@ -15,6 +15,7 @@
 
 	//Calculate fuel ratio (only if player exists)
 	if(instance_exists(oPlayerSpaceship)) fuelRatio = oPlayerSpaceship.currentFuel / oPlayerSpaceship.maxFuel
+	else { fuelRatio = 1 }
 
 	draw_sprite_part(sFuelBarFullCropped,0,0,0,fuelRatio * fullWidth,sprite_get_height(sFuelBarFullCropped),fuelBarXOffset+fuelBarStartingX,fuelBarYOffset+fuelBarStartingY)
 	

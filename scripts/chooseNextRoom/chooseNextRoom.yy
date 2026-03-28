@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"spawnBlackhole",
+  "%Name":"chooseNextRoom",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"spawnBlackhole",
+  "name":"chooseNextRoom",
   "parent":{
-    "name":"Spawning",
-    "path":"folders/Scripts/Control/Spawning.yy",
+    "name":"Transitioning",
+    "path":"folders/Scripts/Control/Transitioning.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

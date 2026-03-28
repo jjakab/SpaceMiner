@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"spawnTerrainHalls",
   "parent":{
-    "name":"Control",
-    "path":"folders/Scripts/Control.yy",
+    "name":"Spawning",
+    "path":"folders/Scripts/Control/Spawning.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

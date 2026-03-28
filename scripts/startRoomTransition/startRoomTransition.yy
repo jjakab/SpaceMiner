@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"startRoomTransition",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"startRoomTransition",
+  "parent":{
+    "name":"Transitioning",
+    "path":"folders/Scripts/Control/Transitioning.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

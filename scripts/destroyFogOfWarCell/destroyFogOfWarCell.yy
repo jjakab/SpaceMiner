@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"destroyFogOfWarCell",
   "parent":{
-    "name":"Control",
-    "path":"folders/Scripts/Control.yy",
+    "name":"Destroying",
+    "path":"folders/Scripts/Control/Destroying.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -147,7 +147,8 @@ if(hasHitBlackhole) {
 	gravity_direction = point_direction(x,y,oBlackhole.x,oBlackhole.y)
 	
 	//If current scale is zero, teleport to next level
-	if(currentScale <= 0.1) {
+	if(currentScale <= 0.2) {
+		startRoomTransition()
 		instance_create_depth(x,y,depth,oPlayerDisappearEffect)
 		instance_destroy()
 	}
