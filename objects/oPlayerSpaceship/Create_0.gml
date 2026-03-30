@@ -28,7 +28,7 @@ if(variable_global_exists("playerCurrentFuel")) {
 else {
 	currentFuel = maxFuel
 }
-fuelBurnRate = 0.0005
+fuelBurnRate = 0.018
 
 //Variables related to blackhole grav
 hasHitBlackhole = false

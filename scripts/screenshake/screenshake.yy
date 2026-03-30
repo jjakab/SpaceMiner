@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"screenshake",
   "parent":{
-    "name":"Effects",
-    "path":"folders/Scripts/Effects.yy",
+    "name":"Camera",
+    "path":"folders/Scripts/Camera.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

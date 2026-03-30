@@ -46,9 +46,9 @@ fogGrid = ds_grid_create(fogGridWidth,fogGridHeight)
 spawnFogOfWar()
 
 //Determine player position in fog grid
-if(instance_exists(oPlayerSpaceship)) {
-	playerGridPositionX = floor(oPlayerSpaceship.x / fogWidth)
-	playerGridPositionY = floor(oPlayerSpaceship.y / fogWidth)
+if(instance_exists(oPlayerAppearEffect)) {
+	playerGridPositionX = floor(oPlayerAppearEffect.x / fogWidth)
+	playerGridPositionY = floor(oPlayerAppearEffect.y / fogWidth)
 	
 	//Start off 
 	destroyFogOfWarGrid(playerGridPositionX,playerGridPositionY)

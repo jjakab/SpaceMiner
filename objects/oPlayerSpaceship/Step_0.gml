@@ -130,10 +130,19 @@ if(place_meeting(x,y+ySpeed,oTerrainMaster)) {
 	}
 }
 
+
+//If timer has elapsed, emit burst and reset timer
+if(trailPartTimer >= trailPartFrequency) {
+	part_particles_burst(trailPartSystem,x,y,psPlayerSpaceship)
+	trailPartTimer = 0	
+}
+
 //Check for blackhole collision
 if(place_meeting(x,y,oBlackhole)) {
 	hasHitBlackhole = true
 }
+
+
 
 //If player has hit black hole, increment gravity and decrement image scale
 if(hasHitBlackhole) {
@@ -152,13 +161,6 @@ if(hasHitBlackhole) {
 		instance_create_depth(x,y,depth,oPlayerDisappearEffect)
 		instance_destroy()
 	}
-}
-
-
-//If timer has elapsed, emit burst and reset timer
-if(trailPartTimer >= trailPartFrequency) {
-	part_particles_burst(trailPartSystem,x,y,psPlayerSpaceship)
-	trailPartTimer = 0	
 }
 
 //Move the player based on xSpeed/ySpeed

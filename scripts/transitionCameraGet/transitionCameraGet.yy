@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"transitionCameraGet",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"transitionCameraGet",
+  "parent":{
+    "name":"Camera",
+    "path":"folders/Scripts/Camera.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,6 +1,4 @@
-/// @description Teleport to next room
+/// @description Set flag
 
-if(tpRoom != noone) {
-	room_goto(tpRoom)	
-}
-instance_destroy()
+animationOver = true
+visible = false

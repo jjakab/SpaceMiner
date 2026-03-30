@@ -1,6 +1,6 @@
 {
   "$GMSprite":"v2",
-  "%Name":"sTeleportEffect",
+  "%Name":"sTeleportEffectDisappear",
   "bboxMode":0,
   "bbox_bottom":26,
   "bbox_left":5,
@@ -30,7 +30,7 @@
   "layers":[
     {"$GMImageLayer":"","%Name":"5a6663fa-5d2e-44fd-91d5-65335c7503f8","blendMode":0,"displayName":"default","isLocked":false,"name":"5a6663fa-5d2e-44fd-91d5-65335c7503f8","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"sTeleportEffect",
+  "name":"sTeleportEffectDisappear",
   "nineSlice":null,
   "origin":4,
   "parent":{
@@ -42,7 +42,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"sTeleportEffect",
+    "%Name":"sTeleportEffectDisappear",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -66,7 +66,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"sTeleportEffect",
+    "name":"sTeleportEffectDisappear",
     "playback":1,
     "playbackSpeed":20.0,
     "playbackSpeedType":0,
@@ -78,34 +78,34 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"9209654b-4449-402e-b343-eb27f5104dc3","path":"sprites/sTeleportEffect/sTeleportEffect.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"9209654b-4449-402e-b343-eb27f5104dc3","path":"sprites/sTeleportEffectDisappear/sTeleportEffectDisappear.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"bcaf6f23-1568-4ac3-838c-36370a303c0c","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b0908f00-362d-4013-bb47-007120a51697","path":"sprites/sTeleportEffect/sTeleportEffect.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b0908f00-362d-4013-bb47-007120a51697","path":"sprites/sTeleportEffectDisappear/sTeleportEffectDisappear.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"bcc82ed4-8990-4acc-8a23-29bc9dd0ae1d","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"1f6f3072-f019-4646-bbdf-b931f8e81094","path":"sprites/sTeleportEffect/sTeleportEffect.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"1f6f3072-f019-4646-bbdf-b931f8e81094","path":"sprites/sTeleportEffectDisappear/sTeleportEffectDisappear.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"61eaa2f0-6045-4796-b73f-be0e7821ea60","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"f4bfa9ec-f452-4c09-ad32-cd76f62f2ab2","path":"sprites/sTeleportEffect/sTeleportEffect.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"f4bfa9ec-f452-4c09-ad32-cd76f62f2ab2","path":"sprites/sTeleportEffectDisappear/sTeleportEffectDisappear.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"ff504cf7-c969-43e4-aa98-196357bd76af","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"004d61f5-681e-4d74-a75d-fdb573267aac","path":"sprites/sTeleportEffect/sTeleportEffect.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"004d61f5-681e-4d74-a75d-fdb573267aac","path":"sprites/sTeleportEffectDisappear/sTeleportEffectDisappear.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"db554733-18ca-48e8-b6e4-5b84204e5d29","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"95a0caad-369e-4c1d-96af-05bb121b60e8","path":"sprites/sTeleportEffect/sTeleportEffect.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"95a0caad-369e-4c1d-96af-05bb121b60e8","path":"sprites/sTeleportEffectDisappear/sTeleportEffectDisappear.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"6603db96-7fc1-487b-9fd2-0f4ca80cc09b","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"bc3f6939-8902-42ba-bb1d-b3ee09a98494","path":"sprites/sTeleportEffect/sTeleportEffect.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"bc3f6939-8902-42ba-bb1d-b3ee09a98494","path":"sprites/sTeleportEffectDisappear/sTeleportEffectDisappear.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"de5d9f04-82df-4725-8a93-3c3a13155944","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"77e7166d-1699-4a4b-9f00-bbfd32447285","path":"sprites/sTeleportEffect/sTeleportEffect.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"77e7166d-1699-4a4b-9f00-bbfd32447285","path":"sprites/sTeleportEffectDisappear/sTeleportEffectDisappear.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"1a121b06-9fbc-4dce-a1d2-b78cbe9be616","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3d5f68f9-966f-4abf-a8e2-5759d779277e","path":"sprites/sTeleportEffect/sTeleportEffect.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3d5f68f9-966f-4abf-a8e2-5759d779277e","path":"sprites/sTeleportEffectDisappear/sTeleportEffectDisappear.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"11fa447a-73d8-47bb-a7c6-530b548e6211","IsCreationKey":false,"Key":8.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c7422001-e011-4125-9362-bea7907ebe8f","path":"sprites/sTeleportEffect/sTeleportEffect.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c7422001-e011-4125-9362-bea7907ebe8f","path":"sprites/sTeleportEffectDisappear/sTeleportEffectDisappear.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"b620ccc3-31b9-40e6-b6af-49f0e022d03c","IsCreationKey":false,"Key":9.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
