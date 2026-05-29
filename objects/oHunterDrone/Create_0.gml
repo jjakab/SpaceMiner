@@ -1,5 +1,7 @@
 /// @description Initialize drone behavior
 
+event_inherited()
+
 enum DroneState
 {
     PATROL,

@@ -1,5 +1,7 @@
 /// @description Initialize variables
 
+event_inherited()
+
 //Declare enum for states
 enum state
 {
