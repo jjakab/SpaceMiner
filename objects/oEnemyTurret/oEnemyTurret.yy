@@ -14,8 +14,8 @@
     "path":"folders/Objects/Enemies/Turret.yy",
   },
   "parentObjectId":{
-    "name":"oTerrainSingleBlock",
-    "path":"objects/oTerrainSingleBlock/oTerrainSingleBlock.yy",
+    "name":"oEnemyMaster",
+    "path":"objects/oEnemyMaster/oEnemyMaster.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

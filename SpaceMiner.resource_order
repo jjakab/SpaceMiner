@@ -101,6 +101,7 @@
     {"name":"spawnTerrainClusters","order":5,"path":"scripts/spawnTerrainClusters/spawnTerrainClusters.yy",},
     {"name":"spawnTerrainHalls","order":6,"path":"scripts/spawnTerrainHalls/spawnTerrainHalls.yy",},
     {"name":"spawnTurrets","order":7,"path":"scripts/spawnTurrets/spawnTurrets.yy",},
+    {"name":"takeDamage","order":3,"path":"scripts/takeDamage/takeDamage.yy",},
     {"name":"transitionCameraGet","order":1,"path":"scripts/transitionCameraGet/transitionCameraGet.yy",},
     {"name":"transitionCameraSet","order":2,"path":"scripts/transitionCameraSet/transitionCameraSet.yy",},
     {"name":"sBackground","order":1,"path":"sprites/sBackground/sBackground.yy",},

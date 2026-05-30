@@ -48,6 +48,14 @@ repositionTarget = { x: x, y: y }
 disabledTimer = 0
 disabledDuration = 0.6
 
+//Disable briefly whenever this drone takes damage
+onDamage = function(damage, damageContext) {
+    screenshake(3, .25, .05)
+
+    currentState = DroneState.DISABLED
+    disabledTimer = disabledDuration
+}
+
 image_angle = irandom(359)
 
 if (instance_exists(oTerrainOre))

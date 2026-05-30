@@ -142,6 +142,7 @@
     {"id":{"name":"spawnTerrainHalls","path":"scripts/spawnTerrainHalls/spawnTerrainHalls.yy",},},
     {"id":{"name":"spawnTurrets","path":"scripts/spawnTurrets/spawnTurrets.yy",},},
     {"id":{"name":"startRoomTransition","path":"scripts/startRoomTransition/startRoomTransition.yy",},},
+    {"id":{"name":"takeDamage","path":"scripts/takeDamage/takeDamage.yy",},},
     {"id":{"name":"transitionCameraGet","path":"scripts/transitionCameraGet/transitionCameraGet.yy",},},
     {"id":{"name":"transitionCameraSet","path":"scripts/transitionCameraSet/transitionCameraSet.yy",},},
     {"id":{"name":"vectorAngle","path":"scripts/vectorAngle/vectorAngle.yy",},},

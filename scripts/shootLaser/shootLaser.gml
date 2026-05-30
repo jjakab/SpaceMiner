@@ -22,10 +22,11 @@ function shootLaser(laserIndex,offsetLength,offsetAngle){
 	    lx = laserOneXOrigin + lengthdir_x(i, image_angle);
 	    ly = laserOneYOrigin + lengthdir_y(i, image_angle);
 
-		if (instance_position(lx, ly, oHunterDrone))
+		//Check if we hit a damageable enemy
+		if (instance_position(lx, ly, oEnemyMaster))
 		{
-			var hunterDrone = instance_position(lx, ly, oHunterDrone)
-			with(hunterDrone) hunterDroneTakeDamage(1)
+			var hitEnemy = instance_position(lx, ly, oEnemyMaster)
+			with(hitEnemy) takeDamage(1)
 			hitObj = true
 			break;
 		}

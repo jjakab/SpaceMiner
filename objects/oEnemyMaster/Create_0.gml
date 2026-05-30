@@ -1,5 +1,9 @@
 /// @description Initialize variables
 
+//Default enemy damage values
+damageable = true
+hp = 10
+
 //Variables related to proximity arrow
 showsProxArrow = true
 
