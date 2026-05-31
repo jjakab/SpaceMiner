@@ -18,9 +18,16 @@
 	else { fuelRatio = 1 }
 
 	draw_sprite_part(sFuelBarFullCropped,0,0,0,fuelRatio * fullWidth,sprite_get_height(sFuelBarFullCropped),fuelBarXOffset+fuelBarStartingX,fuelBarYOffset+fuelBarStartingY)
+
+//Draw the iteration counter
+draw_set_font(
+draw_text(fullWidth + 30,0,"Iteration " + string(global.playerCurrentRoom))
+
 	
 //Draw the pause button
-	draw_sprite_ext(sPauseButton,0,view_get_wport(view_current)-sprite_get_width(sPauseButton),0,1,1,0,c_white,1)
+	draw_sprite_ext(sPauseButton,0,view_get_wport(view_camera[0])-sprite_get_width(sPauseButton),0,1,1,0,c_white,1)
+
+
 
 //STATS FOR TESTING
 /*

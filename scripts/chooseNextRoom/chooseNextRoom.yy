@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"chooseNextRoom",
   "parent":{
-    "name":"Transitioning",
-    "path":"folders/Scripts/Control/Transitioning.yy",
+    "name":"Rooms",
+    "path":"folders/Scripts/Control/Rooms.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

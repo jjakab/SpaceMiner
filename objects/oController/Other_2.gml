@@ -4,3 +4,13 @@ global.shopItemPool = [
 	oPowerUp3,
 	oPowerUp4
 ];
+
+enum roomTypes {
+	NORMAL,
+	SHOP,
+	EVENT
+}
+
+global.playerCurrentRoom = 1
+
+constructRoomList()

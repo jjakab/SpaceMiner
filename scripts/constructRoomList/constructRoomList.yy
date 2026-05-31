@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"startRoomTransition",
+  "%Name":"constructRoomList",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"startRoomTransition",
+  "name":"constructRoomList",
   "parent":{
     "name":"Rooms",
     "path":"folders/Scripts/Control/Rooms.yy",
