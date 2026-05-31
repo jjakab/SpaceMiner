@@ -23,5 +23,6 @@
 	draw_sprite_ext(sPauseButton,0,view_get_wport(view_current)-sprite_get_width(sPauseButton),0,1,1,0,c_white,1)
 
 //STATS FOR TESTING
+/*
 draw_text(5,300,"Large Terrain Count: " + string(instance_number(oTerrainLarge)))
 draw_text(5,350,"Mini Count: " + string(instance_number(oTerrainMiniFrame)))

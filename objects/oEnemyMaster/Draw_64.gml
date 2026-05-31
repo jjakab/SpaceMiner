@@ -1,7 +1,7 @@
 /// @description Draw prox arrow if necessary
 
 //If there is no player, we don't do anything
-if(!instance_exists(oPlayerSpaceship)) {
+if(!instance_exists(oPlayerSpaceship) or (showsProxArrow = false)) {
 	exit;
 }
 
@@ -41,21 +41,28 @@ var arrowX = 0
 var arrowY = 0
 
 //Set arrow coordinates depending on max distance
-if(arrowDir = 0) {
-	arrowX = viewportWidth
-	arrowY = (y - view_get_yport(view_camera[0])) * (view_get_wport(view_camera[0]) / camera_get_view_width(view_camera[0]))
-}
-else if (arrowDir = 1) {
-	arrowX = (x - view_get_xport(view_camera[0])) * (view_get_hport(view_camera[0]) / camera_get_view_height(view_camera[0]))
-	arrowY = 0
-}
-else if(arrowDir = 2) {
-	arrowX = 0
-	arrowY = (y - view_get_yport(view_camera[0])) * (view_get_wport(view_camera[0]) / camera_get_view_width(view_camera[0]))
-}
-else if (arrowDir = 3) {
-	arrowX = (x - view_get_xport(view_camera[0])) * (view_get_hport(view_camera[0]) / camera_get_view_height(view_camera[0]))
-	arrowY = viewportHeight
+
+switch(arrowDir)
+{
+	case 0:
+		arrowX = viewportWidth - borderDistance
+		arrowY = (y - camera_get_view_y(view_camera[0])) * hScale
+	break;
+	
+	case 1:
+		arrowX = (x - camera_get_view_x(view_camera[0])) * wScale
+		arrowY = borderDistance
+	break;
+	
+	case 2:
+		arrowX = borderDistance
+		arrowY = (y - camera_get_view_y(view_camera[0])) * hScale
+	break;
+	
+	case 3:
+		arrowX = (x - camera_get_view_x(view_camera[0])) * wScale
+		arrowY = viewportHeight - borderDistance
+	break;
 }
 
-draw_sprite_ext(arrowSprite,proxSpriteIndex,arrowX,arrowY,1,1,arrowDir * 90,c_white,1)
+draw_sprite_ext(arrowSprite,numFrames - proxSpriteIndex - 1,arrowX,arrowY,1,1,arrowDir * 90,c_white,1)

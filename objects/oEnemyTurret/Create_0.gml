@@ -11,6 +11,9 @@ enum TurretState {
     AIMING
 }
 
+//We don't want this showing a proximity arrow
+showsProxArrow = false
+
 currentState = TurretState.TRACKING;
 
 barrelAngle = baseAngle;
