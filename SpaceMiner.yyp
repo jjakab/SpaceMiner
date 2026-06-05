@@ -78,6 +78,7 @@
   },
   "name":"SpaceMiner",
   "resources":[
+    {"id":{"name":"fGUI","path":"fonts/fGUI/fGUI.yy",},},
     {"id":{"name":"oBlackhole","path":"objects/oBlackhole/oBlackhole.yy",},},
     {"id":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},},
     {"id":{"name":"oController","path":"objects/oController/oController.yy",},},
@@ -114,6 +115,7 @@
     {"id":{"name":"psLaserImpact","path":"particles/psLaserImpact/psLaserImpact.yy",},},
     {"id":{"name":"psPlayerSpaceship","path":"particles/psPlayerSpaceship/psPlayerSpaceship.yy",},},
     {"id":{"name":"r1000x","path":"rooms/r1000x/r1000x.yy",},},
+    {"id":{"name":"rMaster","path":"rooms/rMaster/rMaster.yy",},},
     {"id":{"name":"rShop","path":"rooms/rShop/rShop.yy",},},
     {"id":{"name":"rShop1","path":"rooms/rShop1/rShop1.yy",},},
     {"id":{"name":"rTest","path":"rooms/rTest/rTest.yy",},},
@@ -208,6 +210,7 @@
     {"roomId":{"name":"rTest","path":"rooms/rTest/rTest.yy",},},
     {"roomId":{"name":"rShop1","path":"rooms/rShop1/rShop1.yy",},},
     {"roomId":{"name":"rShop","path":"rooms/rShop/rShop.yy",},},
+    {"roomId":{"name":"rMaster","path":"rooms/rMaster/rMaster.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

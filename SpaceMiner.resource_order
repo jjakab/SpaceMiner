@@ -82,6 +82,7 @@
     {"name":"oTerrainSingleBlock","order":2,"path":"objects/oTerrainSingleBlock/oTerrainSingleBlock.yy",},
     {"name":"psLaserImpact","order":1,"path":"particles/psLaserImpact/psLaserImpact.yy",},
     {"name":"r1000x","order":3,"path":"rooms/r1000x/r1000x.yy",},
+    {"name":"rMaster","order":4,"path":"rooms/rMaster/rMaster.yy",},
     {"name":"rShop","order":1,"path":"rooms/rShop/rShop.yy",},
     {"name":"rShop1","order":2,"path":"rooms/rShop1/rShop1.yy",},
     {"name":"chooseNextRoom","order":1,"path":"scripts/chooseNextRoom/chooseNextRoom.yy",},

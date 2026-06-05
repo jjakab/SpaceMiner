@@ -3,6 +3,9 @@
 */
 function startRoomTransition(){
 	
+	//Increment room counter by 1
+	global.playerCurrentRoom++
+	
 	//Choose the next room
 	var nextRoom = chooseNextRoom(room)
 	

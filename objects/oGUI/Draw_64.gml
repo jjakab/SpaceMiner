@@ -20,7 +20,7 @@
 	draw_sprite_part(sFuelBarFullCropped,0,0,0,fuelRatio * fullWidth,sprite_get_height(sFuelBarFullCropped),fuelBarXOffset+fuelBarStartingX,fuelBarYOffset+fuelBarStartingY)
 
 //Draw the iteration counter
-draw_set_font(
+draw_set_font(fGUI)
 draw_text(fullWidth + 30,0,"Iteration " + string(global.playerCurrentRoom))
 
 	
