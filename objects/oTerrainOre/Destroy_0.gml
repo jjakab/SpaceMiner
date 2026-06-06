@@ -1,6 +1,12 @@
 /// @description Screenshake and create ore fragments
 screenshake(5,2,.1)
 
+//Destroy any turret mounted to this terrain block
+if (variable_instance_exists(id, "attachedTurret") && instance_exists(attachedTurret))
+{
+	instance_destroy(attachedTurret)
+}
+
 //Create four ore fragments
 
 var sw = sprite_get_width(sprite_index)

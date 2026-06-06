@@ -52,6 +52,24 @@ function spawnTurrets(turretArray, numTurrets){
 				spawnedTurret.y += blockWidth / 2
 			break;
 		}
+
+		//Find the wall block behind the turret after its final position is set
+		var supportAngle = spawnedTurret.baseAngle + 180
+		var supportX = spawnedTurret.x + lengthdir_x(blockWidth / 2, supportAngle)
+		var supportY = spawnedTurret.y + lengthdir_y(blockWidth / 2, supportAngle)
+		var supportTerrain = instance_position(supportX, supportY, oTerrainLarge)
+
+		//Ore and other single blocks do not have a large parent
+		if (supportTerrain == noone)
+		{
+			supportTerrain = instance_position(supportX, supportY, oTerrainSingleBlock)
+		}
+
+		//Let the terrain block destroy its turret when the block is removed
+		if (supportTerrain != noone)
+		{
+			supportTerrain.attachedTurret = spawnedTurret
+		}
 		
 		//Delete the value in the array we just spawned and generate a new random index
 		array_delete(turretArray,i,1)

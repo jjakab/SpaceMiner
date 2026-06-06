@@ -47,8 +47,11 @@ switch (currentState)
         preFireTimer -= dt;
         if (preFireTimer <= 0)
         {
-            var tipX = x + lengthdir_x(sprite_width / 2, barrelAngle);
-            var tipY = y + lengthdir_y(sprite_width / 2, barrelAngle);
+            //Spawn bullets from the end of the repositioned barrel
+            var barrelX = x + lengthdir_x(barrelPivotOffset, image_angle)
+            var barrelY = y + lengthdir_y(barrelPivotOffset, image_angle)
+            var tipX = barrelX + lengthdir_x(barrelLength, barrelAngle);
+            var tipY = barrelY + lengthdir_y(barrelLength, barrelAngle);
             var bullet = instance_create_depth(tipX, tipY, 0, oEnemyTurretBullet);
             bullet.direction = barrelAngle;
             bullet.speed = bulletSpeed;
