@@ -31,6 +31,7 @@
     {"name":"Rooms","order":14,"path":"folders/Scripts/Control/Rooms.yy",},
     {"name":"Spawning","order":12,"path":"folders/Scripts/Control/Spawning.yy",},
     {"name":"Enemies","order":9,"path":"folders/Scripts/Enemies.yy",},
+    {"name":"Shaders","order":13,"path":"folders/Scripts/Shaders.yy",},
     {"name":"Player Spaceship","order":2,"path":"folders/Scripts/Player Spaceship.yy",},
     {"name":"Terrain","order":10,"path":"folders/Scripts/Terrain.yy",},
     {"name":"Utility","order":1,"path":"folders/Scripts/Utility.yy",},
