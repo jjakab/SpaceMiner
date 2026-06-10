@@ -39,8 +39,16 @@ constructRoomList()
 	ds_list_add(foregroundColors,make_color_rgb(234,255,41)) //Bright yellow
 	ds_list_add(backgroundColors,make_color_rgb(168,50,0)) //Dark red
 	
-	ds_list_add(foregroundColors,$EFF9E8) //Purple
-	ds_list_add(backgroundColors,$657C6E) //Dark yellow
+	/*
+	ds_list_add(foregroundColors,$657C6E) //Greenish
+	ds_list_add(backgroundColors,$EFF9E8) //Off-white
+	*/
+	
+	ds_list_add(foregroundColors,make_color_rgb(80,29,156)) //Purple
+	ds_list_add(backgroundColors,make_color_rgb(252,212,230)) //Light pink
+	
+	ds_list_add(foregroundColors,make_color_rgb(175,249,234)) //Light green
+	ds_list_add(backgroundColors,make_color_rgb(6,71,69)) //Dark green
 	
 	//Get the # of elements in the list
 	colorMaxCounter = ds_list_size(foregroundColors)
