@@ -5,8 +5,10 @@ varying vec2 v_vTexcoord;
 varying vec4 v_vColour;
 
 uniform float range;
-uniform vec4 colorMatch;
-uniform vec4 colorReplace;
+uniform vec4 colorMatchFore;
+uniform vec4 colorReplaceFore;
+uniform vec4 colorMatchBack;
+uniform vec4 colorReplaceBack;
 
 void main()
 {
@@ -15,11 +17,20 @@ void main()
 	//Convert GML 255-bit color to be 0-1
 	float newRange = range / 255.0;
 	
-	//Check if all three of red green and blue ranges match
-	if(abs(pixelColor.r - colorMatch.r) <= newRange) {
-		if(abs(pixelColor.g - colorMatch.g) <= newRange) {
-			if(abs(pixelColor.b - colorMatch.b) <= newRange) {
-				pixelColor.rgb = colorReplace.rgb;
+	//Check if all three of red green and blue ranges match foreground match color
+	if(abs(pixelColor.r - colorMatchFore.r) <= newRange) {
+		if(abs(pixelColor.g - colorMatchFore.g) <= newRange) {
+			if(abs(pixelColor.b - colorMatchFore.b) <= newRange) {
+				pixelColor.rgb = colorReplaceFore.rgb;
+			}
+		}
+		
+	}
+	
+	else if(abs(pixelColor.r - colorMatchBack.r) <= newRange) {
+		if(abs(pixelColor.g - colorMatchBack.g) <= newRange) {
+			if(abs(pixelColor.b - colorMatchBack.b) <= newRange) {
+				pixelColor.rgb = colorReplaceBack.rgb;
 			}
 		}
 		
