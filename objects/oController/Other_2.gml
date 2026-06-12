@@ -14,7 +14,7 @@ enum roomTypes {
 	EVENT
 }
 
-global.playerCurrentRoom = 1
+global.playerCurrentRoom = 2 //Start at 1 normally
 
 constructRoomList()
 

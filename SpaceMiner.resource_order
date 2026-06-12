@@ -144,6 +144,8 @@
     {"name":"sTerrainCorner1","order":2,"path":"sprites/sTerrainCorner1/sTerrainCorner1.yy",},
     {"name":"sTurretBarrel","order":1,"path":"sprites/sTurretBarrel/sTurretBarrel.yy",},
     {"name":"sTurretBarrelLaser","order":2,"path":"sprites/sTurretBarrelLaser/sTurretBarrelLaser.yy",},
+    {"name":"sTurretBarrelShoot1","order":5,"path":"sprites/sTurretBarrelShoot1/sTurretBarrelShoot1.yy",},
+    {"name":"sTurretBaseDamaged","order":4,"path":"sprites/sTurretBaseDamaged/sTurretBaseDamaged.yy",},
     {"name":"sTurretBullet","order":3,"path":"sprites/sTurretBullet/sTurretBullet.yy",},
   ],
 }

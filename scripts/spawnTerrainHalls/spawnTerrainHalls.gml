@@ -1,6 +1,6 @@
 function spawnTerrainHalls(){
 	
-	var hallsPerSide = 9
+	var hallsPerSide = 5
 	var hallMinWidth = 7
 	var hallMaxWidth = 9
 	

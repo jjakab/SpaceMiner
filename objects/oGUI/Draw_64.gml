@@ -21,7 +21,9 @@
 
 //Draw the iteration counter
 draw_set_font(fGUI)
-draw_text(fullWidth + 30,0,"Iteration " + string(global.playerCurrentRoom))
+draw_set_halign(fa_middle)
+draw_set_valign(fa_top)
+draw_text(view_get_wport(view_camera[0]) - fullWidth,fuelBarYOffset,"Iteration " + string(global.playerCurrentRoom))
 
 	
 //Draw the pause button
