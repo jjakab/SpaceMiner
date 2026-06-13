@@ -2,7 +2,7 @@
 hasSpawnedPlayer = false
 spawnFrame = 7 //Which frame should this spawn the player
 
-instance_create_depth(x,y,depth-5,oPlayerAppearEffectPulse)
+instance_create_layer(x,y,"Fog",oPlayerAppearEffectPulse)
 
 /*
 startDelayFrames = 45

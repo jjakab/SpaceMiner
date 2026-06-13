@@ -33,3 +33,6 @@ bulletSpeed = 3;
 preFireDelay = 1.5;
 preFireTimer = 0;
 isCharging = false;
+
+//Set an alarm to change barrel angle
+alarm_set(0,1)

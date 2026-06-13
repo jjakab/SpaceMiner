@@ -7,10 +7,10 @@ function spawnEdges(){
 	//Top and bottom row
 	for (var i = 1; i < ((room_width - wallWidth) / wallWidth); i++) {
 		
-		var topWall = instance_create_depth(i * wallWidth,0,0,oTerrainEdge)
+		var topWall = instance_create_layer(i * wallWidth,0,"Terrain",oTerrainEdge)
 		with(topWall) image_angle = 270;
 		
-		var bottomWall = instance_create_depth(i * wallWidth,room_height,0,oTerrainEdge)
+		var bottomWall = instance_create_layer(i * wallWidth,room_height,"Terrain",oTerrainEdge)
 		with(bottomWall) image_angle = 90;
 		
 	}
@@ -18,16 +18,16 @@ function spawnEdges(){
 	//Left and right columns
 	for (var i = 0; i < room_height / wallWidth; i++) {
 		
-		var leftWall = instance_create_depth(0,i * wallWidth,0,oTerrainEdge)
+		var leftWall = instance_create_layer(0,i * wallWidth,"Terrain",oTerrainEdge)
 		
 		
-		var rightWall = instance_create_depth(room_width,i * wallWidth,0,oTerrainEdge)
+		var rightWall = instance_create_layer(room_width,i * wallWidth,"Terrain",oTerrainEdge)
 		with(rightWall) image_angle = 180;
 		
 	}
 	
 	//Corners
-	var corner = instance_create_depth(0,0,-1,oTerrainEdge)
+	var corner = instance_create_layer(0,0,"Terrain",oTerrainEdge)
 	with(corner) {
 		sprite_index = sTerrainCorner1	
 	}

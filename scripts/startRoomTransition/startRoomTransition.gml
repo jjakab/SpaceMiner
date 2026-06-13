@@ -10,7 +10,7 @@ function startRoomTransition(){
 	var nextRoom = chooseNextRoom(room)
 	
 	//Create the disappear object and pass the room to it
-	var disappearObj = instance_create_depth(x,y,depth,oPlayerDisappearEffect)
+	var disappearObj = instance_create_layer(x,y,"Blackhole",oPlayerDisappearEffect)
 	with(disappearObj) {
 		tpRoom = nextRoom
 	}

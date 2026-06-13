@@ -39,7 +39,7 @@ function spawnHunterDrones(numDrones){
             continue
         }
 
-        var spawnedDrone = instance_create_depth(spawnX, spawnY, 0, oHunterDrone)
+        var spawnedDrone = instance_create_layer(spawnX, spawnY, "Ships", oHunterDrone)
         spawnedDrone.patrolAnchor = oreAnchor
         spawnedDrone.patrolRadius = spawnRadius
         spawnedDrone.patrolTargetX = oreAnchor.x + lengthdir_x(spawnRadius, spawnAngle)

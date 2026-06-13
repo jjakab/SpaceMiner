@@ -92,7 +92,7 @@ switch (currentState)
         //Fire occasionally while holding a good combat angle
         if (playerDist <= shootRange && fireTimer <= 0 && abs(angle_difference(image_angle, angleToPlayer)) <= 12)
         {
-            var bullet = instance_create_depth(x, y, 0, oEnemyTurretBullet)
+            var bullet = instance_create_layer(x, y, "Ships", oEnemyTurretBullet)
             bullet.direction = image_angle
             bullet.speed = bulletSpeed
             fireTimer = fireCooldown

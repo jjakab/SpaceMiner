@@ -1,5 +1,8 @@
 function spawnTerrainHalls(){
 	
+	//We don't want any terrain if we're in the shop
+	if(room = rShop) exit;
+	
 	var hallsPerSide = 5
 	var hallMinWidth = 7
 	var hallMaxWidth = 9
@@ -63,7 +66,7 @@ function spawnTerrainHalls(){
 	for (var i = 0; i < gridWidth; i++) {
 		for (var j = 0; j < gridHeight; j++) {
 			if(ds_grid_get(wallGrid,i,j) = 1) {
-				instance_create_depth(i * blockWidth, j * blockWidth, 0, decideSingularTerrain())	
+				instance_create_layer(i * blockWidth, j * blockWidth, "Terrain", decideSingularTerrain())	
 			}
 		}
 	}

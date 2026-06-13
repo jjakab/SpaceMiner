@@ -1,6 +1,9 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function spawnTerrainClusters(){
+	
+	//We don't want any terrain if we're in the shop
+	if(room = rShop) exit;
 
 	var blockWidth = 16
 
@@ -36,7 +39,7 @@ function spawnTerrainClusters(){
 		
 			if(position_meeting(xLoc,yLoc,oTerrainLarge)) show_debug_message("iteration " + string(i) + ": block here")
 			else {
-				instance_create_depth(xLoc,yLoc,0,oTerrainLarge)
+				instance_create_layer(xLoc,yLoc,"Terrain",oTerrainLarge)
 				//show_debug_message("iteration " + string(i) + ": PLACED BLOCK AT " + string(xLoc) + ", " + string(yLoc))
 			}
 		

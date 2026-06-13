@@ -26,7 +26,7 @@ if(isVisible(50,50) && hasSpawnedChildren = false) {
 			xPos = i * (cellWidth / 2 - 1) - 1
 			yPos = j * (cellWidth / 2 - 1) - 1
 		
-			miniblock = instance_create_depth(x + xPos,y + yPos,0,oTerrainMiniFrame)
+			miniblock = instance_create_layer(x + xPos,y + yPos,"Terrain",oTerrainMiniFrame)
 			//miniblockArray[cellsPerRow - i,cellsPerRow - j] = miniblock
 		
 			with(miniblock) {

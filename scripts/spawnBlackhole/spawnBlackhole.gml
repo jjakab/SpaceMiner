@@ -17,7 +17,7 @@ function spawnBlackhole(){
 		ry = 40
 	}
 	
-	instance_create_depth(rx,ry,0,oBlackhole)
+	instance_create_layer(rx,ry,"Blackhole",oBlackhole)
 
 
 }

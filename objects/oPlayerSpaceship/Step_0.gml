@@ -158,7 +158,7 @@ if(hasHitBlackhole) {
 	//If current scale is zero, teleport to next level
 	if(currentScale <= 0.2) {
 		startRoomTransition()
-		instance_create_depth(x,y,depth,oPlayerDisappearEffect)
+		instance_create_layer(x,y,"Ships",oPlayerDisappearEffect)
 		instance_destroy()
 	}
 }

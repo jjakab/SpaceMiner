@@ -52,7 +52,7 @@ switch (currentState)
             var barrelY = y + lengthdir_y(barrelPivotOffset, image_angle)
             var tipX = barrelX + lengthdir_x(barrelLength, barrelAngle);
             var tipY = barrelY + lengthdir_y(barrelLength, barrelAngle);
-            var bullet = instance_create_depth(tipX, tipY, 0, oEnemyTurretBullet);
+            var bullet = instance_create_layer(tipX, tipY, "Ships", oEnemyTurretBullet);
             bullet.direction = barrelAngle;
             bullet.speed = bulletSpeed;
             fireTimer = fireCooldown;

@@ -16,13 +16,13 @@ var varMin = -2
 var varMax = 0
 
 	//Top left
-	instance_create_depth(x + (sw / 4) + irandom_range(varMin,varMax),y + (sw / 4) + irandom_range(varMin,varMax),depth,oOreDrop)
+	instance_create_layer(x + (sw / 4) + irandom_range(varMin,varMax),y + (sw / 4) + irandom_range(varMin,varMax),"Ore",oOreDrop)
 	
 	//Top right
-	instance_create_depth(x + (3 * sw / 4) + irandom_range(varMin,varMax),y + (sw / 4) + irandom_range(varMin,varMax),depth,oOreDrop)
+	instance_create_layer(x + (3 * sw / 4) + irandom_range(varMin,varMax),y + (sw / 4) + irandom_range(varMin,varMax),"Ore",oOreDrop)
 	
 	//Bottom left
-	instance_create_depth(x + (sw / 4) + irandom_range(varMin,varMax),y + (3 * sw / 4) + irandom_range(varMin,varMax),depth,oOreDrop)
+	instance_create_layer(x + (sw / 4) + irandom_range(varMin,varMax),y + (3 * sw / 4) + irandom_range(varMin,varMax),"Ore",oOreDrop)
 	
 	//Bottom right
-	instance_create_depth(x + (3 * sw / 4) + irandom_range(varMin,varMax),y + (3 * sw / 4) + irandom_range(varMin,varMax),depth,oOreDrop)
+	instance_create_layer(x + (3 * sw / 4) + irandom_range(varMin,varMax),y + (3 * sw / 4) + irandom_range(varMin,varMax),"Ore",oOreDrop)

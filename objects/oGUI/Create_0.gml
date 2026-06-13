@@ -1,5 +1,8 @@
 /// @description Initialize variables
 
+//If this somehow got duplicated, destroy it
+if(instance_number(oController) > 1) instance_destroy(id,false)
+
 cameraWidth = view_wport[0]
 cameraHeight = view_hport[0]
 

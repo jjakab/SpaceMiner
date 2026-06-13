@@ -3,7 +3,7 @@
 function destroyFogOfWarCell(fogIndex){
 	
 	//If there has been some error and this is undefined, just exit
-	if(fogIndex = undefined || not(instance_exists(fogIndex))) exit
+	if(fogIndex = 0 || fogIndex = undefined || not(instance_exists(fogIndex))) exit
 	
 	if(instance_exists(oPlayerSpaceship)) {
 		
