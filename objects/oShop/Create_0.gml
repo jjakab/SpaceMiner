@@ -34,5 +34,5 @@ for(var i = 0; i <itemCount; i++)
     array_delete(pool, index, 1);
     var spawnX = startX + (i * itemSpacing);
     var spawnY = startY;
-    instance_create_layer(spawnX, spawnY, "Instances", itemObject);
+    instance_create_layer(spawnX, spawnY, "Terrain", itemObject);
 }

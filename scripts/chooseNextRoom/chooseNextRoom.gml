@@ -5,14 +5,13 @@ function chooseNextRoom(currentRoom){
 	switch(oController.roomList[global.playerCurrentRoom])
 	{
 		case roomTypes.NORMAL:
-			return r1000x
-			
+			return rStandard
 		case roomTypes.SHOP:
 			return rShop
 		case roomTypes.EVENT:
-			return r1000x
+			return rStandard
 		default:
-			return r1000x
+			return rStandard
 			
 	}
 

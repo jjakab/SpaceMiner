@@ -26,8 +26,8 @@
   ],
   "name":"rShop1",
   "parent":{
-    "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "name":"Archived",
+    "path":"folders/Rooms/Archived.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

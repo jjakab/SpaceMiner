@@ -11,6 +11,12 @@ function spawnBlackhole(){
 	var rx = irandom_range(buffer + sw, room_width - buffer - sw)
 	var ry = irandom_range(buffer + sw, room_height - buffer - sw)
 	
+	//Custom coords if we're spawning in a shop
+	if(room == rShop) {
+		rx = 160
+		ry = 40
+	}
+	
 	instance_create_depth(rx,ry,0,oBlackhole)
 
 

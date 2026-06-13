@@ -1,5 +1,6 @@
 /// @description Initialize variables, spawn objects
 
+
 //DEBUG OVERLAY FOR TESTING
 show_debug_overlay(false)
 
@@ -20,6 +21,7 @@ gridWidth = ceil(room_width / blockWidth)
 gridHeight = ceil(room_height / blockWidth)
 	
 //Create grid
+if(variable_instance_exists(id,"wallGrid")) ds_grid_destroy(wallGrid)
 wallGrid = ds_grid_create(gridWidth,gridHeight)
 
 //Spawn terrain
@@ -41,6 +43,7 @@ fogWidth = 32
 var fogGridWidth = ceil(room_width / fogWidth)
 var fogGridHeight = ceil(room_height / fogWidth)
 
+if(variable_instance_exists(id,"fogGrid")) ds_grid_destroy(fogGrid)
 fogGrid = ds_grid_create(fogGridWidth,fogGridHeight)
 
 spawnFogOfWar()
@@ -64,3 +67,4 @@ activationInterval = 5 //How many frames do we allow to pass before activating/d
 
 //Set the initial timer
 alarm_set(0,activationInterval)
+
