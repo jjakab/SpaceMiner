@@ -71,6 +71,20 @@ function shootLaser(laserIndex,offsetLength,offsetAngle){
 				
 			}
 			
+			else if (instance_position(lx,ly,oTerrainOre)) {
+				var oreBlock = instance_position(lx,ly,oTerrainOre)
+				with(oreBlock) takeDamage(1)
+				hitObj = true
+				break;
+			}
+			
+			else if (instance_position(lx,ly,oMine)) {
+				var mineBlock = instance_position(lx,ly,oMine)
+				with(mineBlock) takeDamage(1)
+				hitObj = true
+				break;
+			}
+			
 			else if (instance_position(lx,ly,oTerrainSingleBlock)) {
 				var singleBlock = instance_position(lx,ly,oTerrainSingleBlock)
 				with(singleBlock) singleBlockTakeDamage(1)

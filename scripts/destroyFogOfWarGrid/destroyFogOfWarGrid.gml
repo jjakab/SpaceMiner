@@ -4,8 +4,8 @@ function destroyFogOfWarGrid(xGridPos, yGridPos){
 
 	var variance = 2
 	
-	var maxHeight = ds_grid_height(fogGrid)
-	var maxWidth = ds_grid_width(fogGrid)
+	var maxHeight = ds_grid_height(fogGrid) - 1
+	var maxWidth = ds_grid_width(fogGrid) - 1
 
 	//Loop through each position surrounding our specified position
 	for (var xVar = -variance; xVar <= variance; xVar++) {

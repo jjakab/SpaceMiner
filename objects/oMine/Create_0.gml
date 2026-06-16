@@ -29,3 +29,12 @@ triggerRadius = 40;
 
 //Seconds before explosion
 explodeTimer = 1;
+
+onDeath = function(damageContext) {
+	if (variable_instance_exists(id, "didDeathEffects") && didDeathEffects) {
+		return
+	}
+	didDeathEffects = true
+	
+	instance_create_depth(x, y, 0, oMineExplosion);
+}

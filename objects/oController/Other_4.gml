@@ -33,7 +33,7 @@ var turretPositions = generateTurretLocations()
 spawnTurrets(turretPositions,25)
 
 //Spawn drones that patrol around ore fields
-//spawnHunterDrones(12)
+spawnHunterDrones(12)
 
 show_debug_message(turretPositions)
 

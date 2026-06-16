@@ -27,7 +27,6 @@ switch (currentState)
 
         if (explodeTimer <= 0)
         {
-            instance_create_depth(x, y, 0, oMineExplosion);
-            instance_destroy();
+            takeDamage(hp);
         }
 }
