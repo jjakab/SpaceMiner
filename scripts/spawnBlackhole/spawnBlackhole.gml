@@ -13,8 +13,8 @@ function spawnBlackhole(){
 	
 	//Custom coords if we're spawning in a shop
 	if(room == rShop) {
-		rx = 160
-		ry = 40
+		rx = room_width / 2
+		ry = 60
 	}
 	
 	instance_create_layer(rx,ry,"Blackhole",oBlackhole)

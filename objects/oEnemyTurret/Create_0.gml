@@ -1,6 +1,13 @@
 /// @description Orient based on direction and initialize variables
 event_inherited()
+
+//Set hp and max hp
 hp = 50
+maxHp = hp
+
+//We only want to change frame upon damage
+image_speed = 0
+
 //We set the baseAngle in spawnTurret() script, double check to ensure it exists
 if (!variable_instance_exists(id, "baseAngle"))
 {
@@ -33,6 +40,10 @@ bulletSpeed = 3;
 preFireDelay = 1.5;
 preFireTimer = 0;
 isCharging = false;
+
+//Damage display variables
+damageFrames = sprite_get_number(sTurretBaseDamaged)
+randYScale = choose(-1,1)
 
 //Set an alarm to change barrel angle
 alarm_set(0,1)

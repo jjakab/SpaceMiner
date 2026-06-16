@@ -36,8 +36,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sTurretBase",
-    "path":"sprites/sTurretBase/sTurretBase.yy",
+    "name":"sTurretBaseDamaged",
+    "path":"sprites/sTurretBaseDamaged/sTurretBaseDamaged.yy",
   },
   "spriteMaskId":null,
   "visible":true,
