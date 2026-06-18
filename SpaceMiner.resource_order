@@ -149,5 +149,6 @@
     {"name":"sTurretBarrelShoot1","order":5,"path":"sprites/sTurretBarrelShoot1/sTurretBarrelShoot1.yy",},
     {"name":"sTurretBaseDamaged","order":4,"path":"sprites/sTurretBaseDamaged/sTurretBaseDamaged.yy",},
     {"name":"sTurretBullet","order":3,"path":"sprites/sTurretBullet/sTurretBullet.yy",},
+    {"name":"sTurretLaserBeam","order":6,"path":"sprites/sTurretLaserBeam/sTurretLaserBeam.yy",},
   ],
 }

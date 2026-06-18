@@ -212,6 +212,7 @@
     {"id":{"name":"sTurretBase","path":"sprites/sTurretBase/sTurretBase.yy",},},
     {"id":{"name":"sTurretBaseDamaged","path":"sprites/sTurretBaseDamaged/sTurretBaseDamaged.yy",},},
     {"id":{"name":"sTurretBullet","path":"sprites/sTurretBullet/sTurretBullet.yy",},},
+    {"id":{"name":"sTurretLaserBeam","path":"sprites/sTurretLaserBeam/sTurretLaserBeam.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
