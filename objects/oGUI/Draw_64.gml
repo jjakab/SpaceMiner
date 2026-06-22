@@ -19,11 +19,20 @@
 
 	draw_sprite_part(sFuelBarFullCropped,0,0,0,fuelRatio * fullWidth,sprite_get_height(sFuelBarFullCropped),fuelBarXOffset+fuelBarStartingX,fuelBarYOffset+fuelBarStartingY)
 
-//Draw the iteration counter
+//Draw the iteration counter or extraction timer
 draw_set_font(fGUI)
 draw_set_halign(fa_middle)
 draw_set_valign(fa_top)
-draw_text(view_get_wport(view_camera[0]) - fullWidth,fuelBarYOffset,"Iteration " + string(global.playerCurrentRoom))
+
+var roomStatusText = "Iteration " + string(global.playerCurrentRoom)
+if(instance_exists(oExtractionController)) {
+	roomStatusText = "Extraction " + string(ceil(oExtractionController.remainingTime))
+	if(!oExtractionController.isPlayerInRange) {
+		roomStatusText = roomStatusText + " PAUSED"
+	}
+}
+
+draw_text(view_get_wport(view_camera[0]) - fullWidth,fuelBarYOffset,roomStatusText)
 
 	
 //Draw the pause button

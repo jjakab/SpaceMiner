@@ -32,6 +32,7 @@ fuelBurnRate = 0.02
 
 //Variables related to blackhole grav
 hasHitBlackhole = false
+hasStartedExtraction = false
 currentScale = 1 //Current image scale
 scaleThreshold = 0.1 //How small does scale need to be before triggering teleport
 gravIncrement = 0.001 //How fast does gravity increment

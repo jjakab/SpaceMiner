@@ -38,7 +38,7 @@ switch (currentState)
             if (fireTimer <= 0)
             {
                 currentState = TurretState.CHARGING;
-                preFireTimer = preFireDelay;
+                preFireTimer = max(.1, preFireDelay + random_range(-preFireDelayJitter, preFireDelayJitter));
             }
         }
     break;
@@ -53,9 +53,9 @@ switch (currentState)
             var tipX = barrelX + lengthdir_x(barrelLength, barrelAngle);
             var tipY = barrelY + lengthdir_y(barrelLength, barrelAngle);
             var bullet = instance_create_layer(tipX, tipY, "Ships", oEnemyTurretBullet);
-            bullet.direction = barrelAngle;
+            bullet.direction = barrelAngle + random_range(-shotAngleJitter, shotAngleJitter);
             bullet.speed = bulletSpeed;
-            fireTimer = fireCooldown;
+            fireTimer = max(.1, fireCooldown + random_range(-fireCooldownJitter, fireCooldownJitter));
             currentState = TurretState.TRACKING;
         }
 

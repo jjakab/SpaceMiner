@@ -137,29 +137,30 @@ if(trailPartTimer >= trailPartFrequency) {
 	trailPartTimer = 0	
 }
 
-//Check for blackhole collision
-if(place_meeting(x,y,oBlackhole)) {
-	hasHitBlackhole = true
-}
-
-
-
-//If player has hit black hole, increment gravity and decrement image scale
-if(hasHitBlackhole) {
+//Handle blackhole interaction
+var hitBlackhole = instance_place(x, y, oBlackhole)
+if(hitBlackhole != noone || hasHitBlackhole) {
+	if(room == rShop) {
+		hasHitBlackhole = true
+	}
+	else if(!hasStartedExtraction && hitBlackhole != noone && !instance_exists(oExtractionController)) {
+		var extractionController = instance_create_layer(hitBlackhole.x, hitBlackhole.y, "Blackhole", oExtractionController)
+		extractionController.player = id
+		extractionController.blackhole = hitBlackhole
+		hasStartedExtraction = true
+	}
 	
-	//Set scale to ratio of distance to blackhole center
-	currentScale = min(1,point_distance(x,y,oBlackhole.x,oBlackhole.y)/(sprite_get_width(sBlackholeCollisionMask) / 2))
-	image_xscale = currentScale
-	image_yscale = currentScale
-	
-	gravity += gravIncrement
-	gravity_direction = point_direction(x,y,oBlackhole.x,oBlackhole.y)
-	
-	//If current scale is zero, teleport to next level
-	if(currentScale <= 0.2) {
-		startRoomTransition()
-		instance_create_layer(x,y,"Ships",oPlayerDisappearEffect)
-		instance_destroy()
+	if(hasHitBlackhole) {
+		currentScale = min(1,point_distance(x,y,oBlackhole.x,oBlackhole.y)/(sprite_get_width(sBlackholeCollisionMask) / 2))
+		image_xscale = currentScale
+		image_yscale = currentScale
+		
+		gravity += gravIncrement
+		gravity_direction = point_direction(x,y,oBlackhole.x,oBlackhole.y)
+		
+		if(currentScale <= 0.2) {
+			startRoomTransition()
+		}
 	}
 }
 

@@ -8,8 +8,8 @@
   "name":"oPlayerAppearEffectPulse",
   "overriddenProperties":[],
   "parent":{
-    "name":"Player",
-    "path":"folders/Objects/Player.yy",
+    "name":"Blackhole",
+    "path":"folders/Objects/Environment/Blackhole.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"spawnExtractionEnemies",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"spawnExtractionEnemies",
+  "parent":{
+    "name":"Spawning",
+    "path":"folders/Scripts/Control/Spawning.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

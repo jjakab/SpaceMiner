@@ -10,8 +10,8 @@
   "name":"oBlackhole",
   "overriddenProperties":[],
   "parent":{
-    "name":"Other",
-    "path":"folders/Objects/Environment/Other.yy",
+    "name":"Blackhole",
+    "path":"folders/Objects/Environment/Blackhole.yy",
   },
   "parentObjectId":{
     "name":"oTerrainMaster",

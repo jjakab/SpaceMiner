@@ -35,10 +35,13 @@ detectionRange = 300;
 
 //Shooting variables
 fireCooldown = 5;
-fireTimer = 0;
+fireCooldownJitter = random_range(.5, 1.5);
+fireTimer = random(fireCooldownJitter);
 bulletSpeed = 3; 
 preFireDelay = 1.5;
+preFireDelayJitter = random_range(.2, .55);
 preFireTimer = 0;
+shotAngleJitter = random_range(2, 6);
 isCharging = false;
 
 //Damage display variables
