@@ -1,19 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"oBlackhole",
+  "%Name":"oEnemyTurretStandard",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oBlackhole",
+  "name":"oEnemyTurretStandard",
   "overriddenProperties":[],
   "parent":{
-    "name":"Blackhole",
-    "path":"folders/Objects/Environment/Blackhole.yy",
+    "name":"Turret",
+    "path":"folders/Objects/Enemies/Turret.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"oEnemyTurretMaster",
+    "path":"objects/oEnemyTurretMaster/oEnemyTurretMaster.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -32,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sBlackhole",
-    "path":"sprites/sBlackhole/sBlackhole.yy",
+    "name":"sTurretBaseDamaged",
+    "path":"sprites/sTurretBaseDamaged/sTurretBaseDamaged.yy",
   },
   "spriteMaskId":null,
   "visible":true,
