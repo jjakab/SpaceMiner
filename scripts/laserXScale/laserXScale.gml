@@ -5,11 +5,13 @@ function laserXScale(){
 	//Iterate over pixels in laser beam range, stop upon reaching max range or an object
 	for(i = 0; i < sprite_get_width(sTurretLaserBeam); i++){
 
-	    lx = lengthdir_x(i, image_angle);
-	    ly = lengthdir_y(i, image_angle);
+	    lx = x + lengthdir_x(i, image_angle);
+	    ly = y + lengthdir_y(i, image_angle);
 
 		//Check if we hit an object
 	    if(collision_point(lx, ly, oTerrainMaster, false, true)){
+			
+
 			
 			//We have hit a large terrain object, and should check its list of miniterrains
 			if(instance_position(lx,ly,oTerrainLarge)) {
@@ -33,6 +35,11 @@ function laserXScale(){
 					}
 				}
 				
+			}
+			
+			//If this is the turret that spawned the laser, we can ignore entirely
+			else if (instance_position(lx,ly,creatingInstance)) {
+				//Do nothing
 			}
 			
 			//If this was not a large terrain, return the sprite ratio

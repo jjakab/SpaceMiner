@@ -24,6 +24,7 @@ spriteRatio = laserXScale()
 if(x > room_width or x < 0) createNew = false
 if(y > room_height or y < 0) createNew = false
 if(spriteRatio < 1) createNew = false
+if(currentIteration > 3) createNew = false
 
 mask_index = sprite_index
 
