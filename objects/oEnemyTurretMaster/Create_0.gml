@@ -28,7 +28,8 @@ if (!variable_instance_exists(id, "baseAngle"))
 enum TurretState {
     TRACKING,
     CHARGING,
-    AIMING
+    AIMING,
+    POST_FIRE
 }
 
 //We don't want this showing a proximity arrow
@@ -54,6 +55,8 @@ bulletSpeed = 3;
 preFireDelay = 1.5;
 preFireDelayJitter = random_range(.2, .55);
 preFireTimer = 0;
+postFireDelay = 1;
+postFireTimer = 0;
 shotAngleJitter = random_range(2, 6);
 isCharging = false;
 

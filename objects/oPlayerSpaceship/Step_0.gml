@@ -30,7 +30,7 @@ if(leftFactor > 0) {
 		ySpeed += accelerationSpeed * lengthdir_y(leftFactor,leftAngle)
 		
 		//Burn fuel
-		currentFuel = max(0,currentFuel - (leftFactor * fuelBurnRate))
+		adjustFuel(-(leftFactor * fuelBurnRate), "movement")
 		
 		//Increment particle timer
 		trailPartTimer += leftFactor

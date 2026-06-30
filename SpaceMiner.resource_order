@@ -99,6 +99,7 @@
     {"name":"rShopOld","order":2,"path":"rooms/rShopOld/rShopOld.yy",},
     {"name":"rTest","order":1,"path":"rooms/rTest/rTest.yy",},
     {"name":"chooseNextRoom","order":1,"path":"scripts/chooseNextRoom/chooseNextRoom.yy",},
+    {"name":"adjustFuel","order":4,"path":"scripts/adjustFuel/adjustFuel.yy",},
     {"name":"constructRoomList","order":2,"path":"scripts/constructRoomList/constructRoomList.yy",},
     {"name":"destroyFogOfWarGrid","order":1,"path":"scripts/destroyFogOfWarGrid/destroyFogOfWarGrid.yy",},
     {"name":"display_scripts","order":3,"path":"scripts/display_scripts/display_scripts.yy",},

@@ -12,7 +12,8 @@ turretShoot = function() {
     var barrelY = y + lengthdir_y(barrelPivotOffset, image_angle)
 	var laser = instance_create_layer(barrelX, barrelY, "Ships", oEnemyLaserMain, { index : barrelAngle, parentID : noone, creatingInstance: id, currentIteration : 0})	
     fireTimer = max(.1, fireCooldown + random_range(-fireCooldownJitter, fireCooldownJitter));
-    currentState = TurretState.TRACKING;
+    postFireTimer = postFireDelay;
+    currentState = TurretState.POST_FIRE;
 	turretCharging = false
 	barrelImageIndex = 0
 	

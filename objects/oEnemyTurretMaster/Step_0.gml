@@ -56,4 +56,12 @@ switch (currentState)
         }
 
     break;
+	//Hold position briefly after firing before tracking again
+    case TurretState.POST_FIRE:
+        postFireTimer -= dt;
+        if (postFireTimer <= 0)
+        {
+            currentState = TurretState.TRACKING;
+        }
+    break;
 }

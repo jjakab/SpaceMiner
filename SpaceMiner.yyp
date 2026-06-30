@@ -137,6 +137,7 @@
     {"id":{"name":"rStandard","path":"rooms/rStandard/rStandard.yy",},},
     {"id":{"name":"rTest","path":"rooms/rTest/rTest.yy",},},
     {"id":{"name":"chooseNextRoom","path":"scripts/chooseNextRoom/chooseNextRoom.yy",},},
+    {"id":{"name":"adjustFuel","path":"scripts/adjustFuel/adjustFuel.yy",},},
     {"id":{"name":"constructRoomList","path":"scripts/constructRoomList/constructRoomList.yy",},},
     {"id":{"name":"decideSingularTerrain","path":"scripts/decideSingularTerrain/decideSingularTerrain.yy",},},
     {"id":{"name":"deleteLargeTerrain","path":"scripts/deleteLargeTerrain/deleteLargeTerrain.yy",},},

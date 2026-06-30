@@ -10,11 +10,12 @@ if (place_meeting(x, y, oTerrainMaster))
 }
 
 //Apply a light penalty on hit so bullets matter without being overwhelming
-if (place_meeting(x, y, oPlayerSpaceship))
+var hitPlayer = instance_place(x, y, oPlayerSpaceship)
+if (hitPlayer != noone)
 {
-    with (oPlayerSpaceship)
+    with (hitPlayer)
     {
-        oPlayerSpaceship.currentFuel = max(0, currentFuel - 5)
+        adjustFuel(-5, "turret_bullet")
     }
 
     instance_destroy()

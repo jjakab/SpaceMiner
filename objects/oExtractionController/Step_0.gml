@@ -23,7 +23,10 @@ if (isPlayerInRange) {
 	remainingTime = max(0, remainingTime - dt)
 }
 else {
-	player.currentFuel = max(0, player.currentFuel - (fuelDrainPerSecondOutside * dt))
+	var fuelDrain = fuelDrainPerSecondOutside * dt
+	with (player) {
+		adjustFuel(-fuelDrain, "extraction_range")
+	}
 }
 
 shakeTimer -= dt
