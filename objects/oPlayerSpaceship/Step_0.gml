@@ -140,7 +140,7 @@ if(trailPartTimer >= trailPartFrequency) {
 //Handle blackhole interaction
 var hitBlackhole = instance_place(x, y, oBlackhole)
 if(hitBlackhole != noone || hasHitBlackhole) {
-	if(room == rShop) {
+	if(room == rShop or room = rStandard) { //Temporarily added rStandard to normal list
 		hasHitBlackhole = true
 	}
 	else if(!hasStartedExtraction && hitBlackhole != noone && !instance_exists(oExtractionController)) {
