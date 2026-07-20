@@ -2,6 +2,8 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function deleteLargeTerrain(){
 	
+	//This function destroys a large terrain IF necessary (all minigrid blocks are already gone)
+	
 	//If this hasn't spawned children, just exit - it means it's offscreen and hasn't spawned children
 	if(hasSpawnedChildren = false) return
 

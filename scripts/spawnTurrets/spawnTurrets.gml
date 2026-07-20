@@ -23,7 +23,7 @@ function spawnTurrets(turretArray, numTurrets){
 		
 		spawnDirection = struct_get(array_get(turretArray,i),"dir")
 		
-		spawnedTurret = instance_create_layer(spawnX,spawnY,"Ships",oEnemyTurretLaser)
+		spawnedTurret = instance_create_layer(spawnX,spawnY,"Ships",choose(oEnemyTurretStandard,oEnemyTurretLaser))
 		
 		//Change turret position and image angle based on direction
 		switch(spawnDirection)

@@ -3,7 +3,7 @@
 //Draw label
 draw_set_halign(fa_center)
 draw_set_valign(fa_bottom)
-draw_set_font(fShopCaption)
+
 
 var textScale = 4 //What factor do we want to scale font down by to maintain readability
 
@@ -29,7 +29,11 @@ draw_sprite(topSprite,0,xLoc,topY)
 
 //Draw text
 draw_set_valign(fa_top)
+
+draw_set_font(fShopCaption)
 draw_text_ext_transformed(xLoc, topY, drawString, sep,width, 1 / textScale, 1 / textScale,0)
+
+draw_set_font(fShopCaptionBold)
 draw_text_transformed(xLoc, topY - sprite_get_height(topSprite) + 4,powerupTitle, 1 / textScale, 1 / textScale, 0)
 
 //Draw self and background

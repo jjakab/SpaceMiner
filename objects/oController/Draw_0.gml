@@ -1,1 +1,1 @@
-drawDSGrid(wallGrid, 50, 50)
+//drawDSGrid(wallGrid, 50, 50)

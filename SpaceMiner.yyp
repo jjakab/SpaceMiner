@@ -92,6 +92,7 @@
   "resources":[
     {"id":{"name":"fGUI","path":"fonts/fGUI/fGUI.yy",},},
     {"id":{"name":"fShopCaption","path":"fonts/fShopCaption/fShopCaption.yy",},},
+    {"id":{"name":"fShopCaptionBold","path":"fonts/fShopCaptionBold/fShopCaptionBold.yy",},},
     {"id":{"name":"oBlackhole","path":"objects/oBlackhole/oBlackhole.yy",},},
     {"id":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},},
     {"id":{"name":"oController","path":"objects/oController/oController.yy",},},
@@ -147,6 +148,7 @@
     {"id":{"name":"deleteLargeTerrain","path":"scripts/deleteLargeTerrain/deleteLargeTerrain.yy",},},
     {"id":{"name":"destroyFogOfWarCell","path":"scripts/destroyFogOfWarCell/destroyFogOfWarCell.yy",},},
     {"id":{"name":"destroyFogOfWarGrid","path":"scripts/destroyFogOfWarGrid/destroyFogOfWarGrid.yy",},},
+    {"id":{"name":"destroyTerrainInCircle","path":"scripts/destroyTerrainInCircle/destroyTerrainInCircle.yy",},},
     {"id":{"name":"display_scripts","path":"scripts/display_scripts/display_scripts.yy",},},
     {"id":{"name":"drawDSGrid","path":"scripts/drawDSGrid/drawDSGrid.yy",},},
     {"id":{"name":"fuelFragmentReceived","path":"scripts/fuelFragmentReceived/fuelFragmentReceived.yy",},},
@@ -165,6 +167,7 @@
     {"id":{"name":"spawnExtractionEnemies","path":"scripts/spawnExtractionEnemies/spawnExtractionEnemies.yy",},},
     {"id":{"name":"spawnFogOfWar","path":"scripts/spawnFogOfWar/spawnFogOfWar.yy",},},
     {"id":{"name":"spawnHunterDrones","path":"scripts/spawnHunterDrones/spawnHunterDrones.yy",},},
+    {"id":{"name":"spawnPlayer","path":"scripts/spawnPlayer/spawnPlayer.yy",},},
     {"id":{"name":"spawnStars","path":"scripts/spawnStars/spawnStars.yy",},},
     {"id":{"name":"spawnTerrainClusters","path":"scripts/spawnTerrainClusters/spawnTerrainClusters.yy",},},
     {"id":{"name":"spawnTerrainHalls","path":"scripts/spawnTerrainHalls/spawnTerrainHalls.yy",},},

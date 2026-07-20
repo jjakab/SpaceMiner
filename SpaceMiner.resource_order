@@ -70,6 +70,7 @@
   ],
   "ResourceOrderSettings":[
     {"name":"fShopCaption","order":1,"path":"fonts/fShopCaption/fShopCaption.yy",},
+    {"name":"fShopCaptionBold","order":2,"path":"fonts/fShopCaptionBold/fShopCaptionBold.yy",},
     {"name":"oCamera","order":2,"path":"objects/oCamera/oCamera.yy",},
     {"name":"oEnemyLaserChild","order":2,"path":"objects/oEnemyLaserChild/oEnemyLaserChild.yy",},
     {"name":"oEnemyLaserMain","order":1,"path":"objects/oEnemyLaserMain/oEnemyLaserMain.yy",},
@@ -104,6 +105,7 @@
     {"name":"chooseNextRoom","order":1,"path":"scripts/chooseNextRoom/chooseNextRoom.yy",},
     {"name":"constructRoomList","order":2,"path":"scripts/constructRoomList/constructRoomList.yy",},
     {"name":"destroyFogOfWarGrid","order":1,"path":"scripts/destroyFogOfWarGrid/destroyFogOfWarGrid.yy",},
+    {"name":"destroyTerrainInCircle","order":2,"path":"scripts/destroyTerrainInCircle/destroyTerrainInCircle.yy",},
     {"name":"display_scripts","order":3,"path":"scripts/display_scripts/display_scripts.yy",},
     {"name":"drawDSGrid","order":2,"path":"scripts/drawDSGrid/drawDSGrid.yy",},
     {"name":"fuelFragmentReceived","order":1,"path":"scripts/fuelFragmentReceived/fuelFragmentReceived.yy",},
@@ -116,6 +118,7 @@
     {"name":"spawnExtractionEnemies","order":2,"path":"scripts/spawnExtractionEnemies/spawnExtractionEnemies.yy",},
     {"name":"spawnFogOfWar","order":2,"path":"scripts/spawnFogOfWar/spawnFogOfWar.yy",},
     {"name":"spawnHunterDrones","order":3,"path":"scripts/spawnHunterDrones/spawnHunterDrones.yy",},
+    {"name":"spawnPlayer","order":8,"path":"scripts/spawnPlayer/spawnPlayer.yy",},
     {"name":"spawnStars","order":4,"path":"scripts/spawnStars/spawnStars.yy",},
     {"name":"spawnTerrainClusters","order":5,"path":"scripts/spawnTerrainClusters/spawnTerrainClusters.yy",},
     {"name":"spawnTerrainHalls","order":6,"path":"scripts/spawnTerrainHalls/spawnTerrainHalls.yy",},

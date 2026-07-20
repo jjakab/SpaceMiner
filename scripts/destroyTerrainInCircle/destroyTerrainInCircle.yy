@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"resolveTerrainMovement",
+  "%Name":"destroyTerrainInCircle",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"resolveTerrainMovement",
+  "name":"destroyTerrainInCircle",
   "parent":{
-    "name":"Utility",
-    "path":"folders/Scripts/Utility.yy",
+    "name":"Terrain",
+    "path":"folders/Scripts/Terrain.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

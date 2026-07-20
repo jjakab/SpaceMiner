@@ -1,6 +1,6 @@
 {
   "$GMFont":"",
-  "%Name":"fShopCaption",
+  "%Name":"fShopCaptionBold",
   "AntiAlias":1,
   "applyKerning":0,
   "ascender":25,
@@ -210,7 +210,7 @@
   "last":0,
   "lineHeight":31,
   "maintainGms1Font":false,
-  "name":"fShopCaption",
+  "name":"fShopCaptionBold",
   "parent":{
     "name":"Fonts",
     "path":"folders/Fonts.yy",

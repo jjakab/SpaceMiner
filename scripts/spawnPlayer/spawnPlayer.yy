@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"resolveTerrainMovement",
+  "%Name":"spawnPlayer",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"resolveTerrainMovement",
+  "name":"spawnPlayer",
   "parent":{
-    "name":"Utility",
-    "path":"folders/Scripts/Utility.yy",
+    "name":"Spawning",
+    "path":"folders/Scripts/Control/Spawning.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

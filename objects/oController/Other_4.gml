@@ -13,6 +13,8 @@ spawnEdges()
 spawnStars()
 
 spawnBlackhole()
+
+spawnPlayer()
 	
 //Denote width/height of grid
 blockWidth = 16
@@ -31,6 +33,15 @@ var turretPositions = generateTurretLocations()
 
 //Spawn a specified number of turrets based on list
 spawnTurrets(turretPositions,25)
+
+//If there is a blackhole, clear away any terrain from the radius
+//This can be optimized to simply not spawn terrain around blackhole
+if(instance_exists(oBlackhole)) {
+	destroyTerrainInCircle(oBlackhole.x,oBlackhole.y,sprite_get_width(sBlackhole) / 2)
+}
+if(instance_exists(oPlayerAppearEffect)) {
+	destroyTerrainInCircle(oPlayerAppearEffect.x,oPlayerAppearEffect.y,64)	
+}
 
 //Spawn drones that patrol around ore fields
 spawnHunterDrones(12)
